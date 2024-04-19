@@ -1,4 +1,3 @@
-@ -0,0 +1,411 @@
 Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $loinc = http://loinc.org
 Alias: $v3-ActClass = http://terminology.hl7.org/CodeSystem/v3-ActClass
