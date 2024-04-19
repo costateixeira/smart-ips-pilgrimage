@@ -37,7 +37,7 @@ FHIR R5 upgrade notes (need this implemented as a structure map):
 // NOTE:
 // in FHIR R5 Consent.verification.verifiedBy should be used instead of Consent.organization
 // * verification.verifiedBy only Reference(HajjOrganization)
-* verification.verifiedBy 1..
+// * verification.verifiedBy 1..
 * verification.extension contains ConsentVerifiedBy named verifiedBy 1..* MS
 
 * verification.verifiedWith 1..
