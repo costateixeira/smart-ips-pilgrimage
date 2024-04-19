@@ -19,7 +19,7 @@ Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unk
 
 Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c7
 InstanceOf: HajjConsent
-Usage: #example
+Usage: #inline
 
 * category = #CONSENT-KSA
 * organization.display = "Org1"
@@ -36,7 +36,7 @@ Usage: #example
   * verified = true
   * verifiedWith.display = "verifier"
   * verificationDate = "2003"
-  * extension[verifiedBy].valueReference.display = "Verifier"
+* extension[verifiedBy].valueReference.display = "Verifier"
 
 
 Instance: MyIPS
