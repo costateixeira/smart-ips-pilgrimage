@@ -54,4 +54,11 @@ Severity:    #error
 
 Profile: HajjIPS
 Parent: BundleUvIps
-* obeys hajj-consent.required.bundle
+//* obeys hajj-consent.required.bundle
+
+* entry contains
+    consent 1..1
+
+
+* entry[consent].resource 1..
+* entry[consent].resource only HajjConsent

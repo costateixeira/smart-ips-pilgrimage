@@ -46,7 +46,7 @@ Usage: #example
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "175bd032-8b00-4728-b2dc-748bb1501aed"
 * type = #document
-* timestamp = "2017-12-11T14:30:00+01:00"
+* timestamp = "2024-02-11T11:32:00+01:00"
 * entry[0].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"
 * entry[=].resource = 30551ce1-5a28-4356-b684-1e639094ad4d
 * entry[+].fullUrl = "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
@@ -150,8 +150,6 @@ Usage: #inline
 
 * section[+].title = "Consent"
 * section[=].code = $loinc#59284-0 "Consent Document"
-//* section[=].text.status = #generated
-//* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active\n\t\t\t\t\t\t\tNo known food allergies\n\t\t\t\t\t\t</div>"
 * section[=].entry[0] = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
 
 
