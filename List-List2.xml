@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="List2"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: List List2</b></p><a name="List2"> </a><a name="hcList2"> </a><a name="List2-en-US"> </a><h2>This is an old folder</h2><table class="clstu"><tr><td>Mode: Working List </td><td>Status: Retired </td><td>Code: Folder as a FHIR List </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr></table></div>
+  </text>
+  <status value="retired"/>
+  <mode value="working"/>
+  <title value="This is an old folder"/>
+  <code>
+    <coding>
+      <system value="https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"/>
+      <code value="folder"/>
+    </coding>
+  </code>
+</List>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="List3"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: List List3</b></p><a name="List3"> </a><a name="hcList3"> </a><a name="List3-en-US"> </a><h2>This is another type of list</h2><table class="clstu"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: some-other-list </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <mode value="working"/>
+  <title value="This is another type of list"/>
+  <code>
+    <coding>
+      <code value="some-other-list"/>
+    </coding>
+  </code>
+</List>

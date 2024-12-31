@@ -1,0 +1,199 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/Bundle/bundle-transaction> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bundle-transaction"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2014-08-18T01:43:30Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-100000000001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-100000000001> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "List/List1"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-100000000002"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-100000000002> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "List/List2"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-100000000003"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-100000000003> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "List/List3"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-200000000001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-200000000001> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "DocumentReference/DocRef1"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-200000000002"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-200000000002> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "DocumentReference/DocRef2"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-100000000001> a fhir:List ;
+  fhir:id [ fhir:v "List1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"List_List1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: List List1</b></p><a name=\"List1\"> </a><a name=\"hcList1\"> </a><a name=\"List1-en-US\"> </a><h2>This is the good folder</h2><table class=\"clstu\"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: Folder as a FHIR List </td></tr><tr><td/></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"Bundle-bundle-transaction.html#DocumentReference_DocRef1\">Bundle: type = transaction</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:mode [ fhir:v "working"] ; # 
+  fhir:title [ fhir:v "This is the good folder"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "folder" ]
+     ] )
+  ] ; # 
+  fhir:entry ( [
+     fhir:item [
+       fhir:link <http://smart.who.int/ips-pilgrimage/DocumentReference/DocRef1> ;
+       fhir:reference [ fhir:v "DocumentReference/DocRef1" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-100000000002> a fhir:List ;
+  fhir:id [ fhir:v "List2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"List_List2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: List List2</b></p><a name=\"List2\"> </a><a name=\"hcList2\"> </a><a name=\"List2-en-US\"> </a><h2>This is an old folder</h2><table class=\"clstu\"><tr><td>Mode: Working List </td><td>Status: Retired </td><td>Code: Folder as a FHIR List </td></tr><tr><td/></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:mode [ fhir:v "working"] ; # 
+  fhir:title [ fhir:v "This is an old folder"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "folder" ]
+     ] )
+  ] . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-100000000003> a fhir:List ;
+  fhir:id [ fhir:v "List3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"List_List3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: List List3</b></p><a name=\"List3\"> </a><a name=\"hcList3\"> </a><a name=\"List3-en-US\"> </a><h2>This is another type of list</h2><table class=\"clstu\"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: some-other-list </td></tr><tr><td/></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:mode [ fhir:v "working"] ; # 
+  fhir:title [ fhir:v "This is another type of list"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "some-other-list" ]
+     ] )
+  ] . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-200000000001> a fhir:DocumentReference ;
+  fhir:id [ fhir:v "DocRef1"] ; # 
+  fhir:meta [
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocRef1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocRef1</b></p><a name=\"DocRef1\"> </a><a name=\"hcDocRef1\"> </a><a name=\"DocRef1-en-US\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 11369-6}\">History of Immunization Narrative</span></p><p><b>date</b>: 2020-02-01 23:50:50-0500</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Size</b></td><td><b>Hash</b></td></tr><tr><td style=\"display: none\">*</td><td>text/plain</td><td>urn:uuid:cccccccc-2222-0000-0000-000000000002</td><td>11</td><td><code>MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA==</code></td></tr></table><p><b>format</b>: <a href=\"https://profiles.ihe.net/fhir/ihe.formatcode.fhir/1.3.0/CodeSystem-formatcode.html#formatcode-urn.58ihe.58iti.58xds-sd.58text.582008\">IHE Format Code set for use with Document Sharing urn:ihe:iti:xds-sd:text:2008</a>: ITI XDS-SD TEXT</p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:11369-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11369-6" ]
+     ] )
+  ] ) ; # 
+  fhir:date [ fhir:v "2020-02-01T23:50:50-05:00"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "text/plain" ] ;
+       fhir:url [ fhir:v "urn:uuid:cccccccc-2222-0000-0000-000000000002"^^xsd:anyURI ] ;
+       fhir:size [ fhir:v "11"^^xsd:nonNegativeInteger ] ;
+       fhir:hash [ fhir:v "MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA=="^^xsd:base64Binary ]
+     ] ;
+     fhir:format [
+       fhir:system [ fhir:v "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urn:ihe:iti:xds-sd:text:2008" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-200000000002> a fhir:DocumentReference ;
+  fhir:id [ fhir:v "DocRef2"] ; # 
+  fhir:meta [
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_DocRef2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocRef2</b></p><a name=\"DocRef2\"> </a><a name=\"hcDocRef2\"> </a><a name=\"DocRef2-en-US\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 11369-6}\">History of Immunization Narrative</span></p><p><b>date</b>: 2020-02-01 23:50:50-0500</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/json+fhir</td><td>/Bundle/myIPS</td></tr></table><p><b>format</b>: <a href=\"https://profiles.ihe.net/fhir/ihe.formatcode.fhir/1.3.0/CodeSystem-formatcode.html#formatcode-urn.58ihe.58pcc.58ips.582020\">IHE Format Code set for use with Document Sharing urn:ihe:pcc:ips:2020</a>: PCC IPS</p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:11369-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11369-6" ]
+     ] )
+  ] ) ; # 
+  fhir:date [ fhir:v "2020-02-01T23:50:50-05:00"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/json+fhir" ] ;
+       fhir:url [ fhir:v "/Bundle/myIPS"^^xsd:anyURI ]
+     ] ;
+     fhir:format [
+       fhir:system [ fhir:v "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urn:ihe:pcc:ips:2020" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

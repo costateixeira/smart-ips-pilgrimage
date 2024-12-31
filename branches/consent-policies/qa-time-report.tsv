@@ -1,0 +1,12 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-who.ips-pilgrimage.json	10432	-	0	0	0	0	0	0	4	55	0	0	0	0	0	0	0	0	0	0	111	71	0	0	0	3	0	1
+fsh-generated/resources/Bundle-MyIPS.json	35089	28	0	0	0	1	66	0	3	2330	0	0	0	0	0	0	0	1	0	0	174	162	0	0	0	0	0	1
+fsh-generated/resources/CodeSystem-IPS.HAJJ.json	1468	15	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	39	3798	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ConsentPeriod.json	1240	15	1	0	0	0	0	13	0	30	0	0	1	0	0	0	0	0	0	0	67	543	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json	1528	13	0	0	0	0	0	51	0	14	0	0	0	0	0	0	0	0	0	0	78	261	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-HajjConsent.json	3186	14	0	0	0	0	0	140	0	27	0	0	0	0	0	0	0	2	0	0	311	1046	0	0	0	8	1	1
+fsh-generated/resources/StructureDefinition-HajjIPS.json	1012	14	0	0	0	0	0	480	0	171	0	0	1	0	0	0	0	8	0	0	3263	5456	0	0	0	90	0	5
+fsh-generated/resources/StructureDefinition-HajjOrganization.json	656	12	0	0	0	0	0	52	0	26	0	0	0	0	0	0	0	0	0	0	170	170	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-SmartHealthLink.json	1419	13	0	0	0	0	0	51	0	17	0	0	0	0	0	0	0	0	0	0	48	74	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-SmartHealthLinkPayload.json	5285	14	1	0	0	0	0	21	0	19	0	0	0	0	0	0	0	0	0	0	112	91	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json	950	12	0	0	0	0	0	0	1	248	0	0	0	0	0	0	0	0	0	0	38	5551	0	0	0	1	0	0
