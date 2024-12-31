@@ -1,6 +1,6 @@
 Alias: $loinc = http://loinc.org
 
-// this is aBundle to post to a test server
+// this is a Bundle to post to a test server
 
 Instance: bundle-transaction
 InstanceOf: Bundle
@@ -12,13 +12,20 @@ Usage: #example
   * resource = List1
   * request
     * method = #PUT
-    * url = "List/List3"
+    * url = "List/List1"
 * entry[+]
   * fullUrl = "urn:uuid:61ebe359-bfdc-4613-8bf2-100000000002"
   * resource = List2
   * request
     * method = #PUT
+    * url = "List/List2"
+* entry[+]
+  * fullUrl = "urn:uuid:61ebe359-bfdc-4613-8bf2-100000000003"
+  * resource = List3
+  * request
+    * method = #PUT
     * url = "List/List3"
+
 * entry[+]
   * fullUrl = "urn:uuid:61ebe359-bfdc-4613-8bf2-200000000001"
   * resource = DocRef1
@@ -31,12 +38,12 @@ Usage: #example
   * request
     * method = #PUT
     * url = "DocumentReference/DocRef2"
-* entry[+]
-  * fullUrl = "urn:uuid:61ebe359-bfdc-4613-8bf2-200000000003"
-  * resource = DocRef3
-  * request
-    * method = #PUT
-    * url = "DocumentReference/DocRef3"
+// * entry[+]
+//   * fullUrl = "urn:uuid:61ebe359-bfdc-4613-8bf2-200000000003"
+//   * resource = DocRef3
+//   * request
+//     * method = #PUT
+//     * url = "DocumentReference/DocRef3"
 
 
 
@@ -44,14 +51,16 @@ Instance: List1
 InstanceOf: Folder
 Usage: #example
 * title = "This is the good folder"
-* subject.reference = "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" 
+//* subject.reference = "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" 
 * status = #current
+* entry.item = Reference (DocRef1)
+
 
 Instance: List2
 InstanceOf: Folder
 Usage: #example
 * title = "This is an old folder"
-* subject.reference = "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" 
+//* subject.reference = "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" 
 * status = #retired
 
 
@@ -62,7 +71,7 @@ Usage: #example
 * title = "This is another type of list"
 * code = #some-other-list
 * status = #current
-* subject.reference = "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" 
+//* subject.reference = "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8" 
 
 
 
@@ -102,20 +111,20 @@ Usage: #inline
 
 
 
-Instance: DocRef3
-InstanceOf: Binary
-Title: "Dummy Binary document that says: Hello World"
-Description: """
-For Bundling Example binary that 
-- holds \"Hello World\"
-- size 11
-- hash 0a4d55a8d778e5022fab701977c5d840bbc486d0
-- base64 of the hash MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA==
-"""
-Usage: #inline
-* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
-* contentType = #text/plain
-* data = "SGVsbG8gV29ybGQ="
+// Instance: DocRef3
+// InstanceOf: DocumentReference
+// Title: "Dummy Binary document that says: Hello World"
+// Description: """
+// For Bundling Example binary that 
+// - holds \"Hello World\"
+// - size 11
+// - hash 0a4d55a8d778e5022fab701977c5d840bbc486d0
+// - base64 of the hash MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA==
+// """
+// Usage: #inline
+// * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
+// * contentType = #text/plain
+// * data = "SGVsbG8gV29ybGQ="
 
 
 
