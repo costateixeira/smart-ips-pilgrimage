@@ -1,0 +1,42 @@
+@host = http://localhost:8080/fhir
+@folder = fsh-generated/resources
+
+
+### see if server is up
+GET {{host}}/metadata HTTP/1.1
+Accept: application/fhir+xml;fhirVersion=4.0
+Origin: http://localhost:8080
+
+
+#### POST transaction to initialize content
+POST {{host}} HTTP/1.1
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+json
+
+< .//{{folder}}/Bundle-bundle-transaction.json
+
+
+### reindex db - why not
+POST {{host}}/$reindex HTTP/1.1
+Accept: application/fhir+json;fhirVersion=4.0
+
+### check : Get just the folder directly
+GET {{host}}/List?_id=List1
+
+### Check: Get just the docref directly
+GET {{host}}/List?_id=List1&_include:iterate=List:item
+
+
+### Actual query:
+### Get the docrefs in the folder
+GET {{host}}/DocumentReference?_list=List1
+
+
+### using POST
+## Get the docrefs in the folder
+POST {{host}}/DocumentReference/_search HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+_list=List1
+
+
