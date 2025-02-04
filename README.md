@@ -15,6 +15,7 @@ Continuous Build: https://WorldHealthOrganization.github.io/smart-ips-pilgrimage
 
 Canonical / permanent URL: https://smart.who.int/ips-pilgrimage
 
+
 This framework is published under a Creative Commons - IGO [license](LICENSE.md).
 
 ## Changes and feedback
