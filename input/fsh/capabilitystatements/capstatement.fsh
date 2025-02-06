@@ -1,4 +1,4 @@
-Instance: VHLDocumentResponder
+Instance: VHLDocumentResponderCapStatement
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://smart.who.int/smart-pilgrimage/CapabilityStatement/VHLDocumentResponder"
