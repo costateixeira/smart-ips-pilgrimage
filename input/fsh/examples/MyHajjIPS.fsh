@@ -163,6 +163,8 @@ Usage: #inline
 * contact.address.city = "Lyon"
 * contact.address.postalCode = "69001"
 * contact.address.country = "FR"
+
+
 Instance: 1c616b24-3895-48c4-9a02-9a64110351ef
 InstanceOf: Practitioner
 Description: "Example Practitioner"
@@ -175,10 +177,12 @@ Usage: #inline
 * name.given = "Beetje"
 * qualification.code.coding.version = "2.7"
 * qualification.code.coding = $v2-0360#MD "Doctor of Medicine"
+
+
 Instance: 890751f4-2924-4636-bab7-efffc7f3cf15
 InstanceOf: Organization
 Description: "Example Organization"
-Usage: #inline
+Usage: #example
 * identifier.system = "urn:oid:2.16.528.1.1007.3.3"
 * identifier.value = "564738757"
 * active = true
@@ -191,6 +195,8 @@ Usage: #inline
 * address.city = "Dordrecht"
 * address.postalCode = "3311 CE"
 * address.country = "NL"
+
+
 Instance: c64139e7-f02d-409c-bf34-75e8bf23bc80
 InstanceOf: Condition
 Description: "Example Condition"
@@ -211,6 +217,8 @@ Usage: #inline
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * onsetDateTime = "2015"
 * recordedDate = "2016-10"
+
+
 Instance: c220e36c-eb67-4fc4-9ba1-2fabc52acec6
 InstanceOf: MedicationStatement
 Description: "Example MedicationStatement"
@@ -226,6 +234,8 @@ Usage: #inline
 * dosage.route = $standardterms#20053000 "Oral use"
 * dosage.doseAndRate.type = $dose-rate-type#ordered "Ordered"
 * dosage.doseAndRate.doseQuantity = 1 '1' "tablet"
+
+
 Instance: 47524493-846a-4a26-bae2-4ab03e60f02e
 InstanceOf: MedicationStatement
 Description: "Example MedicationStatement"
@@ -237,12 +247,16 @@ Usage: #inline
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectivePeriod.start = "2016-01"
 * dosage.route = $standardterms#20053000 "Oral use"
+
+
 Instance: 976d0804-cae0-45ae-afe3-a19f3ceba6bc
 InstanceOf: Medication
 Description: "Example Medication"
 Usage: #inline
 * code.coding[0] = $sct#108774000 "Product containing anastrozole (medicinal product)"
 * code.coding[+] = $atc#L02BG03 "anastrozole"
+
+
 Instance: 8adc0999-9468-4ac9-9557-680fa133d626
 InstanceOf: Medication
 Description: "Example Medication"
@@ -255,6 +269,8 @@ Usage: #inline
 * code.coding[=].display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * code.coding[+] = $atc#G02CX04 "Cimicifugae rhizoma"
 * code.text = "Black Cohosh Extract herbal supplement"
+
+
 Instance: 72884cad-ebe6-4f43-a51a-2f978275f132
 InstanceOf: AllergyIntolerance
 Description: "Example AllergyIntolerance"
@@ -273,6 +289,8 @@ Usage: #inline
 * onsetDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * onsetDateTime.extension.valueCode = #unknown
 //* onsetDateTime = "2010"
+
+
 Instance: c4597aa2-688a-401b-a658-70acc6de28c6
 InstanceOf: Condition
 Description: "Example Condition"
@@ -293,6 +311,8 @@ Usage: #inline
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * onsetDateTime = "2015-01"
 * abatementDateTime = "2015-03"
+
+
 Instance: 45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7
 InstanceOf: Organization
 Description: "Example Organization"
@@ -300,6 +320,8 @@ Usage: #inline
 * active = true
 * type = $organization-type#other
 * name = "Laboratoire de charme"
+
+
 Instance: aa11a2be-3e36-4be7-b58a-6fc3dace2741
 InstanceOf: Observation
 Description: "Example Observation"
@@ -311,6 +333,8 @@ Usage: #inline
 * effectiveDateTime = "2015-10-10T09:15:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#278149003 "Blood group A Rh(D) positive"
+
+
 Instance: 6e39ccf3-f997-4a2b-8f28-b4b71c778c70
 InstanceOf: Observation
 Description: "Example Observation"
@@ -322,6 +346,8 @@ Usage: #inline
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
+
+
 Instance: b4916505-a06b-460c-9be8-011609282457
 InstanceOf: Observation
 Description: "Example Observation"
@@ -333,6 +359,8 @@ Usage: #inline
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
+
+
 Instance: a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4
 InstanceOf: Observation
 Description: "Example Observation"
@@ -344,6 +372,8 @@ Usage: #inline
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#260385009 "Negative"
+
+
 Instance: 2639657a-c19a-48e2-82cc-471e13b8ad94
 InstanceOf: Observation
 Description: "Example Observation"
@@ -358,6 +388,8 @@ Usage: #inline
 * hasMember[+] = Reference(urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70)
 * hasMember[+] = Reference(urn:uuid:b4916505-a06b-460c-9be8-011609282457)
 * hasMember[+] = Reference(urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4)
+
+
 Instance: cc354e00-a419-47ea-8b6c-1768b2a01646
 InstanceOf: Observation
 Description: "Example Observation"
@@ -370,6 +402,8 @@ Usage: #inline
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueQuantity = 7.5 '%' "%"
 * note.text = "Above stated goal of 7.0 %"
+
+
 Instance: 26bee0a9-5997-4557-ab9d-c6adbb05b572
 InstanceOf: Observation
 Description: "Example Observation"
@@ -382,6 +416,8 @@ Usage: #inline
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#115329001 "Methicillin resistant Staphylococcus aureus"
 * note.text = "Healthy carrier of MRSA"
+
+
 Instance: c7781f44-6df8-4a8b-9e06-0b34263a47c7
 InstanceOf: HajjConsent
 Description: "Example HajjConsent"
@@ -399,6 +435,7 @@ Usage: #inline
 * category.coding.code = #acd
 * performer.display = "Org1"
 * sourceReference = Reference(DocumentReference/ex-documentreference)
+
 Instance: ex-documentreference
 InstanceOf: DocumentReference
 Title: "DocumentReference Consent Paperwork example"
@@ -410,8 +447,8 @@ Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * status = #current
 * type = http://loinc.org#64292-6 "Release of information consent"
-* subject = Reference(Patient/ex-patient)
-* author = Reference(Organization/ex-organization)
+* subject = Reference(Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* author = Reference(Organization/890751f4-2924-4636-bab7-efffc7f3cf15)
 * description = "The captured signed document"
 * content.attachment.title = "Hello World"
 * content.attachment.contentType = #text/plain

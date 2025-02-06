@@ -31,7 +31,7 @@ Usage: #example
   * resource = DocRef1
   * request
     * method = #PUT
-    * url = "DocumentReference/DocRef1"
+    * url = "DocRef1"
 * entry[+]
   * fullUrl = "urn:uuid:61ebe359-bfdc-4613-8bf2-200000000002"
   * resource = DocRef2
@@ -81,7 +81,7 @@ Instance: DocRef1
 InstanceOf: DocumentReference
 Title:      "DocumentReference for Comprehensive fully filled metadata for a document in a Binary"
 Description: "For bundling Example of a Comprehensive DocumentReference resource."
-Usage: #inline
+Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * status = #current
 * type = http://loinc.org#60591-5
