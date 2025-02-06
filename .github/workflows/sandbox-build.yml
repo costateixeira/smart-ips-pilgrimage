@@ -5,7 +5,9 @@ on:
     workflows: ["GitHub-CI"]
     types:
       - completed
-
+    branches-ignore:
+      - 'gh-pages'
+      
 jobs:
   build-and-push:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
