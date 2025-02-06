@@ -83,18 +83,18 @@ Usage: #inline
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * date = "2017-12-11T14:30:00+01:00"
-* author = Reference(urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef)
+* author = Reference(1c616b24-3895-48c4-9a02-9a64110351ef)
 * title = "Patient Summary as of December 11, 2017 14:30"
 * text.div =   "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource &quot;30551ce1-5a28-4356-b684-1e639094ad4d&quot; </p></div><p><b>identifier</b>: id: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: Patient summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2017-12-11 02:30:00+0100</p><p><b>author</b>: Beetje van Hulp, MD</p><p><b>title</b>: Patient Summary as of December 11, 2017 14:30</p><p><b>confidentiality</b>: N</p><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Beetje van Hulp, MD</p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: 2017-12-11 02:30:00+0100</p><p><b>party</b>: Anorg Aniza Tion BV</p></blockquote><p><b>custodian</b>: Anorg Aniza Tion BV</p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td>id: c2277753-9f90-4a95-8ddb-a0b3f6e7d292</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>care provision <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ActClass#PCPR)</span></td><td>?? --&gt; 2017-12-11 02:30:00+0100</td></tr></table></div>"
 * text.status = #generated
 * confidentiality = #N
 * attester[0].mode = #legal
 * attester[=].time = "2017-12-11T14:30:00+01:00"
-* attester[=].party = Reference(urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef)
+* attester[=].party = Reference(1c616b24-3895-48c4-9a02-9a64110351ef)
 * attester[+].mode = #legal
 * attester[=].time = "2017-12-11T14:30:00+01:00"
-* attester[=].party = Reference(urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15)
-* custodian = Reference(urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15)
+* attester[=].party = Reference(890751f4-2924-4636-bab7-efffc7f3cf15)
+* custodian = Reference(890751f4-2924-4636-bab7-efffc7f3cf15)
 * relatesTo.code = #appends
 * relatesTo.targetIdentifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * relatesTo.targetIdentifier.value = "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
@@ -104,23 +104,23 @@ Usage: #inline
 * section[=].code = $loinc#11450-4 "Problem list - Reported"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
-* section[=].entry = Reference(urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80)
+* section[=].entry = Reference(c64139e7-f02d-409c-bf34-75e8bf23bc80)
 * section[+].title = "Medication"
 * section[=].code = $loinc#10160-0 "History of Medication use Narrative"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Medication</th><th>Strength</th><th>Form</th><th>Dosage</th><th>Comment</th></tr></thead><tbody><tr><td>Anastrozole</td><td>1 mg</td><td>tablet</td><td>once daily</td><td>treatment for breast cancer</td></tr><tr><td>Black Cohosh Extract</td><td></td><td>pil</td><td></td><td>herbal supplement</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6)
-* section[=].entry[+] = Reference(urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e)
+* section[=].entry[0] = Reference(c220e36c-eb67-4fc4-9ba1-2fabc52acec6)
+* section[=].entry[+] = Reference(47524493-846a-4a26-bae2-4ab03e60f02e)
 * section[+].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality</div>"
-* section[=].entry[0] = Reference(urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132)
+* section[=].entry[0] = Reference(72884cad-ebe6-4f43-a51a-2f978275f132)
 * section[+].title = "History of Past Illness"
 * section[=].code = $loinc#11348-0 "History of Past illness Narrative"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
-* section[=].entry = Reference(urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6)
+* section[=].entry = Reference(c4597aa2-688a-401b-a658-70acc6de28c6)
 * section[+].title = "Plan of Treatment"
 * section[=].code = $loinc#18776-5 "Plan of care note"
 * section[=].text.status = #generated
@@ -129,14 +129,14 @@ Usage: #inline
 * section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th colspan=\"3\">Blood typing</th></tr></thead><tbody><tr><td>Blood group</td><td>A+</td><td/></tr><tr><td>C Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>E Ab [Presence] in Serum or Plasma</td><td>Positive</td><td/></tr><tr><td>Little c Ab [Presence] in Serum or Plasma</td><td>Negative</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Hemoglobin A1c monitoring</th></tr></thead><tbody><tr><td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td><td>7.5 %</td><td/></tr></tbody></table><table><thead><tr><th colspan=\"3\">Bacteriology</th></tr></thead><tbody><tr><td colspan=\"3\">Methicillin resistant Staphylococcus aureus</td></tr><tr><td colspan=\"3\">Healthy carrier of MRSA</td></tr></tbody></table></div>"
-* section[=].entry[0] = Reference(urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94)
-* section[=].entry[+] = Reference(urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646)
-* section[=].entry[+] = Reference(urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572)
+* section[=].entry[0] = Reference(2639657a-c19a-48e2-82cc-471e13b8ad94)
+* section[=].entry[+] = Reference(cc354e00-a419-47ea-8b6c-1768b2a01646)
+* section[=].entry[+] = Reference(26bee0a9-5997-4557-ab9d-c6adbb05b572)
 * section[+].title = "Advance Directives"
 * section[=].code = $loinc#42348-3
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent MYS for pilgrimage</div>"
-* section[=].entry = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
+* section[=].entry = Reference(c7781f44-6df8-4a8b-9e06-0b34263a47c7)
 
 
 // Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e8
@@ -230,7 +230,7 @@ Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "b75f92cb-61d4-469a-9387-df5ef70d25f0"
 * status = #active
-* medicationReference = Reference(urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc)
+* medicationReference = Reference(976d0804-cae0-45ae-afe3-a19f3ceba6bc)
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectivePeriod.start = "2015-03"
 * dosage.timing.repeat.count = 1
@@ -247,7 +247,7 @@ Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
 * status = #active
-* medicationReference = Reference(urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626)
+* medicationReference = Reference(8adc0999-9468-4ac9-9557-680fa133d626)
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectivePeriod.start = "2016-01"
 * dosage.route = $standardterms#20053000 "Oral use"
@@ -335,7 +335,7 @@ Usage: #inline
 * code = $loinc#882-1 "ABO and Rh group [Type] in Blood"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:15:00+01:00"
-* performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
+* performer = Reference(45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#278149003 "Blood group A Rh(D) positive"
 
 
@@ -348,7 +348,7 @@ Usage: #inline
 * code = $loinc#945-6 "C Ab [Presence] in Serum or Plasma"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
-* performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
+* performer = Reference(45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
 
 
@@ -361,7 +361,7 @@ Usage: #inline
 * code = $loinc#1018-1 "E Ab [Presence] in Serum or Plasma"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
-* performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
+* performer = Reference(45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
 
 
@@ -374,7 +374,7 @@ Usage: #inline
 * code = $loinc#1156-9 "little c Ab [Presence] in Serum or Plasma"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
-* performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
+* performer = Reference(45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#260385009 "Negative"
 
 
@@ -387,11 +387,11 @@ Usage: #inline
 * code.text = "Blood typing"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10"
-* performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
-* hasMember[0] = Reference(urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741)
-* hasMember[+] = Reference(urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70)
-* hasMember[+] = Reference(urn:uuid:b4916505-a06b-460c-9be8-011609282457)
-* hasMember[+] = Reference(urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4)
+* performer = Reference(45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
+* hasMember[0] = Reference(aa11a2be-3e36-4be7-b58a-6fc3dace2741)
+* hasMember[+] = Reference(6e39ccf3-f997-4a2b-8f28-b4b71c778c70)
+* hasMember[+] = Reference(b4916505-a06b-460c-9be8-011609282457)
+* hasMember[+] = Reference(a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4)
 
 
 Instance: cc354e00-a419-47ea-8b6c-1768b2a01646
@@ -403,7 +403,7 @@ Usage: #inline
 * code = $loinc#17856-6 "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2017-11-10T08:20:00+01:00"
-* performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
+* performer = Reference(45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueQuantity = 7.5 '%' "%"
 * note.text = "Above stated goal of 7.0 %"
 
@@ -417,7 +417,7 @@ Usage: #inline
 * code = $loinc#42803-7 "Bacteria identified in Isolate"
 * subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2017-12-10T08:20:00+01:00"
-* performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
+* performer = Reference(45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#115329001 "Methicillin resistant Staphylococcus aureus"
 * note.text = "Healthy carrier of MRSA"
 
