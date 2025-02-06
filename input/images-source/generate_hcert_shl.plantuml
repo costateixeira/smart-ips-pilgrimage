@@ -6,6 +6,6 @@
 participant "Origin Country\nHIE" as OCHIE
 autonumber "<b>00:</b>"
 
-OCHIE -> OCHIE : generate HCERT containing the SHL
+OCHIE -> OCHIE : generate HCERT containing the VHL
 
 @enduml

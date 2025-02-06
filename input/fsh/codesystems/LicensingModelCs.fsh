@@ -4,6 +4,8 @@ Id:         LicensingModelCs
 Title:     "Licensing Model"
 Description: "Licensing Model"
 * ^url =  $LicensingModelCs
+* ^experimental = true
+* ^caseSensitive = false
 
 
 * #Proprietary "Proprietary"

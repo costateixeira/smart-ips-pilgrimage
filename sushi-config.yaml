@@ -2,14 +2,14 @@ id: smart.who.int.ips-pilgrimage
 canonical: http://smart.who.int/ips-pilgrimage
 name: SMART_WHO_INT_IPS_Pilgrimage
 title: SMART Verifiable IPS for Pilgrimage
-description: An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage.
-status: draft # draft | active | retired | unknown
-version: 1.0.1
+description: An Implementation Guide which describes how to utilize GDHCN and IPS for verifiable health documents during pilgrimage
+status: active # draft | active | retired | unknown
+version: 2.0.2
 #fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 experimental : false
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC-BY-SA-3.0-IGO # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -271,10 +271,11 @@ parameters:
 #   setId: always # always | standalone-only
 dependencies:
   smart.who.int.base: 0.1.0
-  ihe.iti.mcsd: current
+  ihe.iti.mcsd: 3.8.0
   hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.uv.sdc: 3.0.0
-  hl7.fhir.uv.cpg: current
+  hl7.fhir.uv.cpg: 2.0.0
   ihe.iti.pcf: 1.1.0
+  ihe.iti.mhd: 4.2.2
 #  who.base: current
   ihe.iti.mhd: current 

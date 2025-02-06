@@ -36,5 +36,5 @@ This work is licensed under the Creative Commons Attribution 3.0 IGO license (CC
 
 To view a copy of this license, visit [https://creativecommons.org/licenses/by/3.0/igo/](https://creativecommons.org/licenses/by/3.0/igo/)
 
-© 2023 Your Organization Name
+© 2023 World Health Organization
 

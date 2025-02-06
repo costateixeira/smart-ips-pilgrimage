@@ -4,6 +4,8 @@ Id:         LanguageCs
 Title:     "Language"
 Description: "Language"
 * ^url =  $LanguageCs
+* ^experimental = true
+* ^caseSensitive = false
 
 * #Arabic "Arabic"
 * #Chinese "Chinese"

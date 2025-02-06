@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="65a2317" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.5.0" camunda:diagramRelationId="bd9a9cd4-1c73-4d9c-9de0-ad1c209baa3d">
+  <bpmn:collaboration id="pcf-send-request-response" name="Health Check and Issue SHL">
+    <bpmn:documentation>Documents the health check and SHL consent and issuance process</bpmn:documentation>
+    <bpmn:extensionElements>
+      <zeebe:properties>
+        <zeebe:property name="ig-slug" value="ips-pilgrimage" />
+        <zeebe:property name="ig-base-url" value="http://smart.who.int/" />
+        <zeebe:property name="ig-version" value="1.1.4" />
+        <zeebe:property name="ig-publisher" value="WHO" />
+        <zeebe:property name="ig-code" value="pcf-send-request-response" />
+        <zeebe:property name="ig-name" value="IPS Pilgramage" />
+      </zeebe:properties>
+    </bpmn:extensionElements>
+    <bpmn:participant id="Participant_0iuhbv0" name="Health Check and Counseling, Verbal Consent (brief)" processRef="Process_u5tyhjo">
+      <bpmn:documentation>This is the documentation for the overall business process - Element documentation</bpmn:documentation>
+    </bpmn:participant>
+  </bpmn:collaboration>
+  <bpmn:message id="Message_1n4qpip" name="Message_1n4qpip">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="=generated-shl" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmn:message id="Message_1cvgb5c" name="Message_1cvgb5c">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="=true" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmn:message id="Message_09q730l" name="Message_09q730l">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="=true" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmn:message id="Message_3ommqi4" name="Message_3ommqi4">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="=true" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmn:message id="Message_1rjo24j" name="Message_1rjo24j">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="=true" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmn:process id="Process_u5tyhjo" name="Health Check and SHL Issuance, Wallet Consent" isExecutable="true">
+    <bpmn:documentation>This is the documentation for the overall business process - process documentation</bpmn:documentation>
+    <bpmn:extensionElements>
+      <zeebe:properties>
+        <zeebe:property name="ig-code" value="health-check-verbal-consent-and-shl-issuance" />
+      </zeebe:properties>
+    </bpmn:extensionElements>
+    <bpmn:laneSet id="LaneSet_0dwp5r8">
+      <bpmn:lane id="Lane_0wgkuao" name="Human Actor">
+        <bpmn:extensionElements>
+          <zeebe:properties>
+            <zeebe:property />
+          </zeebe:properties>
+        </bpmn:extensionElements>
+        <bpmn:flowNodeRef>Activity_0jf6sb5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_06jssth</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1akt4be</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1c275vq</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_0auzvom</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1gkedet</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0g1r4b0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0kl9rop</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_14by6lv</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0x95bb2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0hhavs0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_15hb31c</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_04g5g05</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0a2dk4l</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_1fd86oz">
+          <bpmn:lane id="Lane_15l2hl7" name="Counselor">
+            <bpmn:documentation>Counselor from origin country supporting Hajj pilgrim during inital health screening</bpmn:documentation>
+            <bpmn:extensionElements>
+              <zeebe:properties>
+                <zeebe:property name="ig-actor-type" value="person" />
+                <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
+                <zeebe:property name="ig-code" value="counselor" />
+              </zeebe:properties>
+            </bpmn:extensionElements>
+            <bpmn:flowNodeRef>Activity_0jf6sb5</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_06jssth</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Gateway_0auzvom</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_1gkedet</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Gateway_04g5g05</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0a2dk4l</bpmn:flowNodeRef>
+          </bpmn:lane>
+          <bpmn:lane id="Lane_0g1cue8" name="Pilgrim">
+            <bpmn:documentation>The Hajj pilgrim</bpmn:documentation>
+            <bpmn:extensionElements>
+              <zeebe:properties>
+                <zeebe:property name="ig-actor-type" value="person" />
+                <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
+                <zeebe:property name="ig-code" value="pilgrim" />
+              </zeebe:properties>
+            </bpmn:extensionElements>
+            <bpmn:flowNodeRef>Activity_1akt4be</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_1c275vq</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0g1r4b0</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Event_0kl9rop</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Gateway_14by6lv</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0x95bb2</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0hhavs0</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_15hb31c</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_1v5u79n" name="System Actor">
+        <bpmn:flowNodeRef>Activity_04p41ni</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0220uyc</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0kdgdmi</bpmn:flowNodeRef>
+        <bpmn:childLaneSet id="LaneSet_01jxvj6">
+          <bpmn:lane id="Lane_1qh4l5w" name="Origin Country  Wallet">
+            <bpmn:documentation>The pilgrim's origin country's digital health wallet</bpmn:documentation>
+            <bpmn:extensionElements>
+              <zeebe:properties>
+                <zeebe:property name="ig-actor-type" value="system" />
+                <zeebe:property name="actorCS" value="http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.ACTOR" />
+                <zeebe:property name="ig-code" value="ochw" />
+              </zeebe:properties>
+            </bpmn:extensionElements>
+            <bpmn:flowNodeRef>Activity_04p41ni</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0220uyc</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>Activity_0kdgdmi</bpmn:flowNodeRef>
+          </bpmn:lane>
+        </bpmn:childLaneSet>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:task id="Activity_0jf6sb5" name="registration">
+      <bpmn:incoming>Flow_0tfce9m</bpmn:incoming>
+      <bpmn:outgoing>Flow_1pvand0</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:businessRuleTask id="Activity_06jssth" name="Conduct health assessment">
+      <bpmn:extensionElements>
+        <zeebe:calledDecision decisionId="conduct-health-assessment-0qi90kd" resultVariable="eligible-for-hajj" />
+        <zeebe:ioMapping>
+          <zeebe:output source="=e" target="OutputVariable_3g54vj1" />
+        </zeebe:ioMapping>
+        <zeebe:properties>
+          <zeebe:property name="ig-code" value="conduct-health-assessment" />
+        </zeebe:properties>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1pvand0</bpmn:incoming>
+      <bpmn:outgoing>Flow_088vpzd</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+    <bpmn:task id="Activity_1akt4be" name="arrive to clinic">
+      <bpmn:incoming>Flow_1rxt7a0</bpmn:incoming>
+      <bpmn:outgoing>Flow_0tfce9m</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:startEvent id="Event_1c275vq" name="Start">
+      <bpmn:outgoing>Flow_1rxt7a0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway id="Gateway_0auzvom">
+      <bpmn:incoming>Flow_088vpzd</bpmn:incoming>
+      <bpmn:outgoing>Flow_04v5pie</bpmn:outgoing>
+      <bpmn:outgoing>Flow_09o531n</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="Activity_1gkedet" name="inform patient ineligibel for Hajj">
+      <bpmn:incoming>Flow_09o531n</bpmn:incoming>
+      <bpmn:outgoing>Flow_00p5wv7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0g1r4b0" name="leave clinic">
+      <bpmn:incoming>Flow_1vnwnmu</bpmn:incoming>
+      <bpmn:outgoing>Flow_1r6rjth</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="Event_0kl9rop" name="End">
+      <bpmn:incoming>Flow_1r6rjth</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:exclusiveGateway id="Gateway_14by6lv">
+      <bpmn:incoming>Flow_00p5wv7</bpmn:incoming>
+      <bpmn:incoming>Flow_0x2k6nq</bpmn:incoming>
+      <bpmn:incoming>Flow_16jvour</bpmn:incoming>
+      <bpmn:outgoing>Flow_1vnwnmu</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="Activity_0x95bb2" name="Review SHL">
+      <bpmn:incoming>Flow_062h08q</bpmn:incoming>
+      <bpmn:outgoing>Flow_16jvour</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:userTask id="Activity_0hhavs0" name="configure SHL privacy settings on wallet">
+      <bpmn:extensionElements>
+        <zeebe:properties>
+          <zeebe:property name="ig-code" value="shl-configure-privacy-settings" />
+        </zeebe:properties>
+        <zeebe:formDefinition formKey="questionniare-config-shl" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0sda9t0</bpmn:incoming>
+      <bpmn:outgoing>Flow_05u8qen</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:task id="Activity_04p41ni" name="display SHL configuration form">
+      <bpmn:incoming>Flow_167vey6</bpmn:incoming>
+      <bpmn:outgoing>Flow_0sda9t0</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_15hb31c" name="login to wallet app">
+      <bpmn:incoming>Flow_1kpqa8r</bpmn:incoming>
+      <bpmn:outgoing>Flow_167vey6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="Gateway_04g5g05" name="pilgrim provided consent to counselor?">
+      <bpmn:incoming>Flow_0tcq8eo</bpmn:incoming>
+      <bpmn:outgoing>Flow_1kpqa8r</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0x2k6nq</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="Activity_0a2dk4l" name="Counsel patient on consent and digital health walllet">
+      <bpmn:extensionElements />
+      <bpmn:incoming>Flow_04v5pie</bpmn:incoming>
+      <bpmn:outgoing>Flow_0tcq8eo</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0220uyc" name="display SHL">
+      <bpmn:extensionElements />
+      <bpmn:incoming>Flow_0wf5ff5</bpmn:incoming>
+      <bpmn:outgoing>Flow_062h08q</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0kdgdmi" name="process privacy configuration form for SHL">
+      <bpmn:incoming>Flow_05u8qen</bpmn:incoming>
+      <bpmn:outgoing>Flow_0wf5ff5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0tfce9m" sourceRef="Activity_1akt4be" targetRef="Activity_0jf6sb5" />
+    <bpmn:sequenceFlow id="Flow_1pvand0" sourceRef="Activity_0jf6sb5" targetRef="Activity_06jssth" />
+    <bpmn:sequenceFlow id="Flow_088vpzd" sourceRef="Activity_06jssth" targetRef="Gateway_0auzvom" />
+    <bpmn:sequenceFlow id="Flow_1rxt7a0" sourceRef="Event_1c275vq" targetRef="Activity_1akt4be" />
+    <bpmn:sequenceFlow id="Flow_04v5pie" name="no" sourceRef="Gateway_0auzvom" targetRef="Activity_0a2dk4l">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=false</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_09o531n" sourceRef="Gateway_0auzvom" targetRef="Activity_1gkedet">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_00p5wv7" sourceRef="Activity_1gkedet" targetRef="Gateway_14by6lv" />
+    <bpmn:sequenceFlow id="Flow_1vnwnmu" sourceRef="Gateway_14by6lv" targetRef="Activity_0g1r4b0" />
+    <bpmn:sequenceFlow id="Flow_1r6rjth" sourceRef="Activity_0g1r4b0" targetRef="Event_0kl9rop" />
+    <bpmn:sequenceFlow id="Flow_0x2k6nq" name="yes" sourceRef="Gateway_04g5g05" targetRef="Gateway_14by6lv">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=false</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_16jvour" sourceRef="Activity_0x95bb2" targetRef="Gateway_14by6lv" />
+    <bpmn:sequenceFlow id="Flow_062h08q" name="issue SHL" sourceRef="Activity_0220uyc" targetRef="Activity_0x95bb2" />
+    <bpmn:sequenceFlow id="Flow_0sda9t0" sourceRef="Activity_04p41ni" targetRef="Activity_0hhavs0" />
+    <bpmn:sequenceFlow id="Flow_05u8qen" name="request SHL&#10;from wallet" sourceRef="Activity_0hhavs0" targetRef="Activity_0kdgdmi" />
+    <bpmn:sequenceFlow id="Flow_167vey6" sourceRef="Activity_15hb31c" targetRef="Activity_04p41ni" />
+    <bpmn:sequenceFlow id="Flow_1kpqa8r" sourceRef="Gateway_04g5g05" targetRef="Activity_15hb31c">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_0tcq8eo" sourceRef="Activity_0a2dk4l" targetRef="Gateway_04g5g05" />
+    <bpmn:sequenceFlow id="Flow_0wf5ff5" sourceRef="Activity_0kdgdmi" targetRef="Activity_0220uyc" />
+  </bpmn:process>
+  <bpmn:message id="Message_03bb0i2" name="Message_03bb0i2">
+    <bpmn:extensionElements>
+      <zeebe:subscription correlationKey="=true" />
+    </bpmn:extensionElements>
+  </bpmn:message>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="pcf-send-request-response">
+      <bpmndi:BPMNShape id="BPMNShape_0ofhup5" bpmnElement="Participant_0iuhbv0" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1140" height="890" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1lvsixw" bpmnElement="Lane_1v5u79n" isHorizontal="true">
+        <dc:Bounds x="190" y="761" width="1110" height="209" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_07r6ypv" bpmnElement="Lane_1qh4l5w" isHorizontal="true">
+        <dc:Bounds x="220" y="761" width="1080" height="209" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_01ycp3p" bpmnElement="Lane_0wgkuao" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1110" height="681" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_02h5ekn" bpmnElement="Lane_0g1cue8" isHorizontal="true">
+        <dc:Bounds x="220" y="431" width="1080" height="330" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0xoogmh" bpmnElement="Lane_15l2hl7" isHorizontal="true">
+        <dc:Bounds x="220" y="80" width="1080" height="351" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_14vwxbe" bpmnElement="Activity_0jf6sb5">
+        <dc:Bounds x="330" y="261" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_12gjym7" bpmnElement="Activity_06jssth">
+        <dc:Bounds x="330" y="120" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0h5hes4" bpmnElement="Activity_1akt4be">
+        <dc:Bounds x="330" y="470" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0pixyw8" bpmnElement="Event_1c275vq">
+        <dc:Bounds x="242" y="492" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="247" y="503" width="25" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_016v85s" bpmnElement="Gateway_0auzvom" isMarkerVisible="true">
+        <dc:Bounds x="519" y="135" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1071" y="273" width="77" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0rn9gpt" bpmnElement="Activity_1gkedet">
+        <dc:Bounds x="494" y="261" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_11e16nf" bpmnElement="Activity_0g1r4b0">
+        <dc:Bounds x="330" y="640" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_181no0l" bpmnElement="Event_0kl9rop">
+        <dc:Bounds x="242" y="662" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="250" y="673" width="20" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0uo0ajt" bpmnElement="Gateway_14by6lv" isMarkerVisible="true">
+        <dc:Bounds x="519" y="565" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0qtkizu" bpmnElement="Activity_0x95bb2">
+        <dc:Bounds x="690" y="560" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_09rigz0" bpmnElement="Activity_0hhavs0">
+        <dc:Bounds x="950" y="560" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_11zgzj3" bpmnElement="Activity_04p41ni">
+        <dc:Bounds x="1040" y="820" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0lymngz" bpmnElement="Activity_15hb31c">
+        <dc:Bounds x="1130" y="560" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_15kfm3r" bpmnElement="Gateway_04g5g05" isMarkerVisible="true">
+        <dc:Bounds x="1165" y="276" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1201" y="340" width="78" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1xbvnuk" bpmnElement="Activity_0a2dk4l">
+        <dc:Bounds x="1130" y="120" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1144kkn_di" bpmnElement="Activity_0220uyc">
+        <dc:Bounds x="690" y="820" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07upgiy_di" bpmnElement="Activity_0kdgdmi">
+        <dc:Bounds x="870" y="820" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_01jhfbv" bpmnElement="Flow_0tfce9m">
+        <di:waypoint x="380" y="470" />
+        <di:waypoint x="380" y="341" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1u5tcwx" bpmnElement="Flow_1pvand0">
+        <di:waypoint x="380" y="261" />
+        <di:waypoint x="380" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_07d1bx5" bpmnElement="Flow_088vpzd">
+        <di:waypoint x="430" y="160" />
+        <di:waypoint x="519" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0aiyh1y" bpmnElement="Flow_1rxt7a0">
+        <di:waypoint x="278" y="510" />
+        <di:waypoint x="330" y="510" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_071wq1v" bpmnElement="Flow_04v5pie">
+        <di:waypoint x="569" y="160" />
+        <di:waypoint x="1130" y="160" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="863" y="273" width="13" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1evdgno" bpmnElement="Flow_09o531n">
+        <di:waypoint x="544" y="185" />
+        <di:waypoint x="544" y="261" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="797" y="389" width="13" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0y6ubus" bpmnElement="Flow_00p5wv7">
+        <di:waypoint x="544" y="341" />
+        <di:waypoint x="544" y="565" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_04igayv" bpmnElement="Flow_1vnwnmu">
+        <di:waypoint x="544" y="615" />
+        <di:waypoint x="544" y="680" />
+        <di:waypoint x="430" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0djiayz" bpmnElement="Flow_1r6rjth">
+        <di:waypoint x="330" y="680" />
+        <di:waypoint x="278" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1g8ergr" bpmnElement="Flow_0x2k6nq">
+        <di:waypoint x="1165" y="301" />
+        <di:waypoint x="640" y="301" />
+        <di:waypoint x="640" y="580" />
+        <di:waypoint x="559" y="580" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1161" y="453" width="17" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1lzia4c" bpmnElement="Flow_16jvour">
+        <di:waypoint x="690" y="600" />
+        <di:waypoint x="559" y="600" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0kiz06l" bpmnElement="Flow_062h08q">
+        <di:waypoint x="740" y="820" />
+        <di:waypoint x="740" y="640" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="924" y="703" width="52" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1xkbuuf" bpmnElement="Flow_0sda9t0">
+        <di:waypoint x="1090" y="820" />
+        <di:waypoint x="1090" y="600" />
+        <di:waypoint x="1050" y="600" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0wd8fhs" bpmnElement="Flow_05u8qen">
+        <di:waypoint x="950" y="600" />
+        <di:waypoint x="920" y="600" />
+        <di:waypoint x="920" y="820" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1199" y="696" width="63" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0s9arpa" bpmnElement="Flow_167vey6">
+        <di:waypoint x="1180" y="640" />
+        <di:waypoint x="1180" y="860" />
+        <di:waypoint x="1140" y="860" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0bi26ge" bpmnElement="Flow_1kpqa8r">
+        <di:waypoint x="1190" y="326" />
+        <di:waypoint x="1190" y="560" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1442" y="527" width="17" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_07pj0mu" bpmnElement="Flow_0tcq8eo">
+        <di:waypoint x="1190" y="200" />
+        <di:waypoint x="1190" y="276" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0wf5ff5_di" bpmnElement="Flow_0wf5ff5">
+        <di:waypoint x="870" y="860" />
+        <di:waypoint x="790" y="860" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

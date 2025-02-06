@@ -16,6 +16,8 @@ Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-t
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
 Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
+Alias: $consent = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT
+
 Instance: MyIPS
 InstanceOf: HajjIPS
 Title: "My IPS"
@@ -66,6 +68,8 @@ Usage: #example
 * entry[=].resource = 26bee0a9-5997-4557-ab9d-c6adbb05b572
 * entry[+].fullUrl = "urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7"
 * entry[=].resource = c7781f44-6df8-4a8b-9e06-0b34263a47c7
+
+
 Instance: 30551ce1-5a28-4356-b684-1e639094ad4d
 InstanceOf: Composition
 Title : "Hajj IPS Composition"
@@ -238,8 +242,6 @@ InstanceOf: Medication
 Description: "Example Medication"
 Usage: #inline
 * code.coding[0] = $sct#108774000 "Product containing anastrozole (medicinal product)"
-* code.coding[+] = urn:oid:2.16.840.1.113883.2.4.4.1#99872 "ANASTROZOL 1MG TABLET"
-* code.coding[+] = urn:oid:2.16.840.1.113883.2.4.4.7#2076667 "ANASTROZOL CF TABLET FILMOMHULD 1MG"
 * code.coding[+] = $atc#L02BG03 "anastrozole"
 Instance: 8adc0999-9468-4ac9-9557-680fa133d626
 InstanceOf: Medication
@@ -386,7 +388,7 @@ Description: "Example HajjConsent"
 Usage: #inline
 * status = #active
 * scope = $consentscope#patient-privacy
-* provision.purpose.code = #CONSENT-KSA
+* provision.purpose.code = IPS.HAJJ.CONSENT#CONSENT-KSA
 * provision.type = #permit
 * patient.display = "patient1"
 * dateTime = "2016-05-11"

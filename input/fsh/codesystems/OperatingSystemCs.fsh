@@ -4,6 +4,8 @@ Id:         OperatingSystemCs
 Title:     "Operating System"
 Description: "Operating System"
 * ^url =  $OperatingSystemCs
+* ^experimental = true
+* ^caseSensitive = false
 
 
 * #Linux "Linux"

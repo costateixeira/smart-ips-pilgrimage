@@ -42,13 +42,13 @@ Standard Passcode and No Time Validity:
 
     b. No user input required
 
-3.	Generate Smart Health Link (SHL):
+3.	Generate Smart Health Link (VHL):
 
-    a. SHL is created as a manifest URL based on user preferences and supports JSON and PDF content types.
+    a. VHL is created as a manifest URL based on user preferences and supports JSON and PDF content types.
 
-4.	Embed SHL into HCert:
+4.	Embed VHL into HCert:
 
-    a. SHL is embedded into a Health Certificate (HCert) following WHO's smart trust specification.
+    a. VHL is embedded into a Health Certificate (HCert) following WHO's smart trust specification.
 
 5.	Prepare COSE Message:
 
@@ -73,15 +73,15 @@ Standard Passcode and No Time Validity:
     a. COSE message is extracted from the CWT.
     b. COSE signature is verified using Malaysia’s public key from the GDHCN public registry. Malaysia’s country code is “MY”
 
-3.	Decode HCert and Extract SHL:
+3.	Decode HCert and Extract VHL:
 
     a. HCert is decoded from base64.
-    b. SHL JSON is extracted from the HCert payload.
+    b. VHL JSON is extracted from the HCert payload.
 
-4.	Retrieve and Decode SHL Manifest:
+4.	Retrieve and Decode VHL Manifest:
 
-    a. POST request is sent to the SHL manifest URL to retrieve the base64 encoded SHL manifest JSON.
-    b. SHL manifest JSON is decoded from base64.
+    a. POST request is sent to the VHL manifest URL to retrieve the base64 encoded VHL manifest JSON.
+    b. VHL manifest JSON is decoded from base64.
 
 5.	Retrieve IPS:
 

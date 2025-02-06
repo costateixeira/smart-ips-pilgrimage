@@ -15,4 +15,4 @@ Description:  "CodeSystem for IPS.HAJJ.TRANSACTION CodeSystem for utilization of
 * #shl-doc-view "Access SHL Document Viewer"
 * #shl-get-manifest "Retrieve SHL Document Manifest" 
 * #consent-post-counseling "Record Consent - Post-Counseling"
-* #consent-wallet "Record Consent - Digital Health Wallet "
+* #consent-wallet "Record Consent - Digital Health Wallet"

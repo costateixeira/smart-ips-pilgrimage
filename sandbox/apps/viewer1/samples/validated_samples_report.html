@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Validation Results</title>
+  <link href="http://hl7.org/fhir/fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results</h1>
+ <p>0 errors, 24 warnings, 2 hints. Generated Sep 22, 2024, 1:16:56 PM by Validator Version 6.3.26 (Git# 46affee48ff1). Built 2024-09-17T22:00:50.76Z (4 days old) (2300ms)</p>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;1"><b>C:\test\validated_samples\IPS_IG-bundle-01.json</b></a></td><td><b>0</b></td><td><b>11</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;2"><b>C:\test\validated_samples\IPS_IG_bundle-minimal.json</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;3"><b>C:\test\validated_samples\IPS_IG_bundle-no-info-required-sections.json</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;4"><b>C:\test\validated_samples\NZ_Peter_Jordan_AAA1234.json</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l1"> </a>
+<h2><a href="file:C:\test\validated_samples\IPS_IG-bundle-01.json">C:\test\validated_samples\IPS_IG-bundle-01.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/30551ce1-5a28-4356-b684-1e639094ad4d*/.type.coding[0].display (l25/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Patient summary Document' for http://loinc.org#60591-5. Valid display is 'Patient summary Document' (en-US), 'Patient summary Document' (en-US), 'Patient summary Doc' (en-US), 'Resumen del paciente: Paciente:Punto temporal:Tipo:Documento:' (es-MX), 'Patientenkurzakte - Dokument' (de-DE), 'Patiënt samenvatting [bevinding] (document)' (nl-NL) or 'Patient Summary' (de-AT) (for the language(s) 'en-GB')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/30551ce1-5a28-4356-b684-1e639094ad4d*/.section[0].code.coding[0].display (l78/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Problem list - Reported' for http://loinc.org#11450-4. Valid display is 'Problem list - Reported' (en-US), 'Problem list - Reported' (en-US), 'Problem list Reported' (en-US), 'Lista de problemas: Paciente:Punto temporal:Tipo:Nominal:Reported' (es-MX), 'lista de problemas:hallazgo:punto en el tiempo:^paciente:Nominal:informado' (es-AR), 'Problem list Reported' (pt-BR), 'Problemliste - Berichtet' (de-DE) or 'Probleemlijst [bevinding] d.m.v. rapportage' (nl-NL) (for the language(s) 'en-GB')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/30551ce1-5a28-4356-b684-1e639094ad4d*/.section[1].code.coding[0].display (l95/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Medication use Narrative' for http://loinc.org#10160-0. Valid display is 'History of Medication use Narrative' (en-US), 'History of Medication use Narrative' (en-US), 'Hx of Medication use' (en-US), 'Uso de medicación: Paciente:Punto temporal:Hx:Narrativo:' (es-MX), 'antecedentes de consumo de medicaciones:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR), 'Medikationsanamnese - Freitext' (de-DE) or 'Medicijngebruik [voorgeschiedenis] (tekstueel)' (nl-NL) (for the language(s) 'en-GB')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/30551ce1-5a28-4356-b684-1e639094ad4d*/.section[2].code.coding[0].display (l115/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Allergies and adverse reactions Document' for http://loinc.org#48765-2. Valid display is 'Allergies and adverse reactions Document' (en-US), 'Allergies and adverse reactions Document' (en-US), 'Allergies &amp;or adverse reactions Doc' (en-US), 'Alergias y reacciones adversas: Paciente:Punto temporal:Tipo:Documento:' (es-MX), 'Allergien und unerwünschte Wirkungen - Dokument' (de-DE) or 'Allergieën en/of allergische reacties [bevinding] (document)' (nl-NL) (for the language(s) 'en-GB')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/30551ce1-5a28-4356-b684-1e639094ad4d*/.section[4].code.coding[0].display (l152/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Plan of care note' for http://loinc.org#18776-5. Valid display is 'Plan of care note' (en-US), 'Plan of care note' (en-US), 'Plan of care note' (en-US), 'Y' (en-US), 'Nota del plan de cuidados:{Configuración} :Punto temporal:Tipo:Documento:{Role}' (es-MX), 'plan de tratamiento:hallazgo:punto en el tiempo:plan de tratamiento:Narrativo:' (es-AR), 'Behandlungsplan - Notiz' (de-DE) or 'Behandelplan [bevinding] in {instelling} d.m.v. {rol} (document)' (nl-NL) (for the language(s) 'en-GB')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/30551ce1-5a28-4356-b684-1e639094ad4d*/.section[5].code.coding[0].display (l166/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Relevant diagnostic tests/laboratory data Narrative' for http://loinc.org#30954-2. Valid display is 'Relevant diagnostic tests/laboratory data Narrative' (en-US), 'Relevant diagnostic tests/laboratory data Narrative' (en-US), 'Relevant Dx tests/lab data' (en-US), 'Pruebas de diagnóstico o datos de laboratorio relevantes: Paciente:Punto temporal:Tipo:Narrativo:' (es-MX), 'pruebas diagnósticas relevantes y/o información de laboratorio:hallazgo:punto en el tiempo:^paciente:Narrativo:' (es-AR), 'Relevant Dx tests/lAc data' (pt-BR), 'Relevante diagnostische Tests/Labordaten - Freitext' (de-DE) or 'Relevante diagnostische tests en/of laboratoriumgegevens [bevinding] (tekstueel)' (nl-NL) (for the language(s) 'en-GB')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource/*Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8*/.contact[0].relationship[0] (l221/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource/*Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80*/.category[0] (l332/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Condition Category Codes' (http://hl7.org/fhir/ValueSet/condition-category|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#75326-9)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[1].system (l469/c8)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[7].resource/*Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc*/.code.coding[2].system (l469/c8)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[10].resource/*Condition/c4597aa2-688a-401b-a658-70acc6de28c6*/.category[0] (l596/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Condition Category Codes' (http://hl7.org/fhir/ValueSet/condition-category|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#75326-9)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l2"> </a>
+<h2><a href="file:C:\test\validated_samples\IPS_IG_bundle-minimal.json">C:\test\validated_samples\IPS_IG_bundle-minimal.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource/*Patient/244ad7c3-beeb-41d1-8a2f-c76b8cf720ad*/.contact[0].relationship[0] (l157/c10)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource/*Condition/d179321e-c091-4cd4-8642-3a27537d506d*/.category[0] (l268/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Condition Category Codes' (http://hl7.org/fhir/ValueSet/condition-category|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#75326-9)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource/*Condition/d179321e-c091-4cd4-8642-3a27537d506d*/.severity (l275/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6751-7)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[6].resource/*Medication/95db7c92-566a-4ded-896b-2220ab244a9e*/.code.coding[1].system (l371/c8)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[6].resource/*Medication/95db7c92-566a-4ded-896b-2220ab244a9e*/.code.coding[2].system (l371/c8)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l3"> </a>
+<h2><a href="file:C:\test\validated_samples\IPS_IG_bundle-no-info-required-sections.json">C:\test\validated_samples\IPS_IG_bundle-no-info-required-sections.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/514af4c1-194d-48b4-8afe-7be09d3f895a*/.type.coding[0].display (l29/c8)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Patient summary Document' for http://loinc.org#60591-5. Valid display is 'Patient summary Document' (en-US), 'Patient summary Document' (en-US), 'Patient summary Doc' (en-US), 'Resumen del paciente: Paciente:Punto temporal:Tipo:Documento:' (es-MX), 'Patientenkurzakte - Dokument' (de-DE), 'Patiënt samenvatting [bevinding] (document)' (nl-NL) or 'Patient Summary' (de-AT) (for the language(s) 'en-NZ')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource/*Composition/514af4c1-194d-48b4-8afe-7be09d3f895a*/.type (l29/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#60591-5)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/514af4c1-194d-48b4-8afe-7be09d3f895a*/.section[0].code.coding[0].display (l75/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Allergies and adverse reactions Document' for http://loinc.org#48765-2. Valid display is 'Allergies and adverse reactions Document' (en-US), 'Allergies and adverse reactions Document' (en-US), 'Allergies &amp;or adverse reactions Doc' (en-US), 'Alergias y reacciones adversas: Paciente:Punto temporal:Tipo:Documento:' (es-MX), 'Allergien und unerwünschte Wirkungen - Dokument' (de-DE) or 'Allergieën en/of allergische reacties [bevinding] (document)' (nl-NL) (for the language(s) 'en-NZ')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/514af4c1-194d-48b4-8afe-7be09d3f895a*/.section[1].code.coding[0].display (l97/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Problem list - Reported' for http://loinc.org#11450-4. Valid display is 'Problem list - Reported' (en-US), 'Problem list - Reported' (en-US), 'Problem list Reported' (en-US), 'Lista de problemas: Paciente:Punto temporal:Tipo:Nominal:Reported' (es-MX), 'lista de problemas:hallazgo:punto en el tiempo:^paciente:Nominal:informado' (es-AR), 'Problem list Reported' (pt-BR), 'Problemliste - Berichtet' (de-DE) or 'Probleemlijst [bevinding] d.m.v. rapportage' (nl-NL) (for the language(s) 'en-NZ')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/514af4c1-194d-48b4-8afe-7be09d3f895a*/.section[2].code.coding[0].display (l119/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Medication use Narrative' for http://loinc.org#10160-0. Valid display is 'History of Medication use Narrative' (en-US), 'History of Medication use Narrative' (en-US), 'Hx of Medication use' (en-US), 'Uso de medicación: Paciente:Punto temporal:Hx:Narrativo:' (es-MX), 'antecedentes de consumo de medicaciones:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR), 'Medikationsanamnese - Freitext' (de-DE) or 'Medicijngebruik [voorgeschiedenis] (tekstueel)' (nl-NL) (for the language(s) 'en-NZ')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/514af4c1-194d-48b4-8afe-7be09d3f895a*/.section[3].code.coding[0].display (l141/c10)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'History of Immunization Narrative' for http://loinc.org#11369-6. Valid display is 'History of Immunization Narrative' (en-US), 'History of Immunization Narrative' (en-US), 'Hx of Immunization' (en-US), 'Inmunización: Paciente:Punto temporal:Hx:Narrativo:' (es-MX), 'antecedente de inmunización:hallazgo:punto en el tiempo:^paciente:Narrativo:informado' (es-AR), 'Impfanamnese - Freitext' (de-DE), 'Inenting [voorgeschiedenis] (tekstueel)' (nl-NL) or 'Immunisierungsstatus' (de-AT) (for the language(s) 'en-NZ')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l4"> </a>
+<h2><a href="file:C:\test\validated_samples\NZ_Peter_Jordan_AAA1234.json">C:\test\validated_samples\NZ_Peter_Jordan_AAA1234.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/4f78c433-1040-4992-ad37-eba0195860c2*/.section[3].text.div (l165/c1001)</b></td><td><b>warning</b></td><td title="XHTML_IDREF_NOT_FOUND"><b>The target of the HTML idref attribute 'b083f633-19c6-4694-a977-6dd06f12d21c' was not found in the resource</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[0].resource/*Composition/4f78c433-1040-4992-ad37-eba0195860c2*/.section[3].text.div (l165/c1001)</b></td><td><b>warning</b></td><td title="XHTML_IDREF_NOT_FOUND"><b>The target of the HTML idref attribute 'f45df792-ed09-4e8c-aaf5-c58e0f704278' was not found in the resource</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[7].resource/*Condition/44ffe9f6-e12f-4b14-bc16-2aecc4380ae7*/ (l479/c14)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[8].resource/*MedicationStatement/31b92dc4-e561-4bd4-9a2e-7dea8dd1ed08*/ (l506/c14)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>

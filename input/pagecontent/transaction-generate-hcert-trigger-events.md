@@ -1,1 +1,1 @@
-The generate HCERT containing the SHL may be initiated by an Issue SHL request
+The generate HCERT containing the VHL may be initiated by an Issue VHL request

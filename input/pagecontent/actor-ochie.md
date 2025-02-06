@@ -9,7 +9,7 @@
       <td>The Origin Country HIE participates acts as the recipient of requests, takes necessary actions, and responds back to the source in the following transactions:
       <ul>
         <li><a href="transactions.html#record-consent-request">record consent from wallet - request (record-consent-request)</a></li>
-        <li><a href="transactions.html#issue-verifiable-shl-request">issue SHL request (issue-shl-request)</a></li>
+        <li><a href="transactions.html#issue-vhl-request">issue VHL request (issue-shl-request)</a></li>
       </ul></td>
     </tr>
   </tbody>

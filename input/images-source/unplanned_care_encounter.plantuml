@@ -10,10 +10,10 @@ actor "Health Worker\nin Host Country" as HW
 
 autonumber "<b>00:</b>"
 
-P --> HW: travels to Host Country and seeks care,\nshares verifiable health document from\nhealth wallet (IPS via SHL),\nshares pilgrimage number
+P --> HW: travels to Host Country and seeks care,\nshares verifiable health document from\nhealth wallet (IPS via VHL),\nshares pilgrimage number
 HW --> HCEMR: registers patient with pilgrimage number
 HW --> HCEMR: scans QR code within EMR
-HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
+HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via VHL)
 destroy OC
 HCEMR -> HCEMR: verifies QR code signature\n using cached keys
 HCEMR  -> OCHIE : retrieves health document\n(document might be pregenerated\n or generated on request)

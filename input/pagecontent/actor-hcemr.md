@@ -8,7 +8,7 @@
       <td>Transactions participated in as source</td>
       <td>The Host Country EMR initiates requests to retrieve content in the following transactions:
       <ul>
-        <li><a href="transactions.html#retrieve-SHL-manifest-request">retrieve SHL Manifest request</a></li>
+        <li><a href="transactions.html#retrieve-VHL-manifest-request">retrieve VHL Manifest request</a></li>
         <li><a href="transactions.html#retrieve-IPS-request">retrieve IPS request</a></li>
       </ul>
       </td>

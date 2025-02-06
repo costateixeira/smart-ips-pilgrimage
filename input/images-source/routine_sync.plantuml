@@ -14,7 +14,7 @@ autonumber "<b>00:</b>"
 loop routine synchronization 
   OC -> OC : generate public-private key pairs\nfor issuing health documents
   OCHIE -> WHO: send public keys\nfor IPS verification
-  HCEMR -> WHO : retrieves and caches all public keys\nfor IPS and SHL verification
+  HCEMR -> WHO : retrieves and caches all public keys\nfor IPS and VHL verification
 end
 
 @enduml

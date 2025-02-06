@@ -5,6 +5,9 @@ Title:     "Browser"
 Description: "Browser"
 * ^url =  $BrowserCs
 
+* ^experimental = true
+* ^caseSensitive = false
+
 * #Firefox "Firefox"
 * #Chrome "Chrome"
 * #MicrosoftEdge "MicrosoftEdge"

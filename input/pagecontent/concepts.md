@@ -27,7 +27,7 @@ Key concepts and abbreviations are described here. Additional terms are defined 
 ### **QR Code**
 - A machine-readable optical label that contains information about the item to which it is attached. In this context, it holds encrypted data that allows healthcare providers access to a pilgrim's IPS when scanned.
 
-### **Verifiable Smart Health Link (SHL)**
+### **Smart Health Link (SHL)**
 - A Smart Health Link is a special link that provides time-bound, password and cryptographically restricted access to a health certificate or document.
 
 ### **PIN (Personal Identification Number)**

@@ -1,94 +1,51 @@
 @startuml
 skinparam svgDimensionStyle false
+hide footbox
+
 
 title Overall Sequence Diagram for Religious Pilgrimage and IPS
 
 actor "Hajj Counselor" as C
 actor "Pilgrim from\nOrigin Country" as P
-actor "Accompanying Clinician\nfrom\nOrigin Country" as AC
 participant "Origin Country\nHealth Wallet" as OC
 participant "Origin Country\nHIE" as OCHIE
-participant "WHO GDHCN" as WHO
+participant "WHO\nGDHCN" as WHO
 participant "Host Country\nEMR" as HCEMR
 actor "Health Worker\nin Host Country" as HW
-participant "Bar code scanner" as Scanner
 
 autonumber "<b>00:</b>"
 
 
-loop routine synchronization 
-  OC -> OC : generate public-private key pairs\nfor issuing health documents
-  OCHIE -> WHO: send public keys\nfor IPS verification
-  HCEMR -> WHO : retrieves and caches all public keys\nfor IPS and SHL verification
-end
+OCHIE -> WHO: perform routine\nsynchronization\nof keys
+'activate OCHIE
+activate WHO
+HCEMR -> WHO : perform routine\nsynchronization\nof keys
+deactivate WHO
 destroy WHO
+deactivate OCHIE
 
+C -> P : Conducts health assessment,\ncounsels the pilgrim and collects consent
+activate P
+P -> OC : Request for\nPatient Summary\nas QR Code
+activate OC
+OCHIE -> OC : Issue\nVerifiable Health Link\nas QR Code
+deactivate OC
+...
+P --> HW: Travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via VHL)
+activate HW
 
-group Asessment
-  alt Indonesia
-   C -> P : Jamaah Haji conducts health assessment
-  else Malaysia
-   C -> P : conduct health assessment\nutilize FHIR Questionnaire resource for UI
-	 C -> OCHIE : store Assesment response as\nFHIR QuestionnaireResponse resource
-	 OCHIE -> OCHIE : Assessment QuestionaireResponse extracted to\n corresponding FHIR resource 
-  end
-end
-
-
-group Counseling and Consent
-  alt Indonesia
-   C -> P : explains use of ID Badge with SMART Health Link\nincluding consent policy
-   OCHIE -> OCHIE : create a FHIR Consent resource with\ncode #CONSENT-KSA and #CONSENT-IDN
-  else Malaysia
-   C -> P : explain utilization of digital health wallet\nduring Hajj including consent policy 
-  end
-end
-
-
-group Issue Smart Health Link
-	note left of QR #aqua
-   	  Verifiable Smart Health Links:
-	  create Smart Health Link for the IPS
-	  generate digital signature\ncapture signed SHL as HCERT claim
-	  HCERT is rendered as QR code
-	end note
-  alt Indonesia
-    note right of OCHIE #yellow
-      Badge is printed prior to health assessment
-    end note
-    OCHIE -> OCHIE : generate SHL
-    OCHIE -> OCHIE : Send SHL to printer
-    C -> P :   issue Jamaah Haji Indonesia Card with\nVerifiable Smart Health Link printed on back
-  else Malaysia
-    P -> OC : generate IPS from the FHIR resource through MySejhatera app\n set disclosure & timelimit
-	  OC -> OC : display Consent Questionniare as\n FHIR Questionnaire resource for UI
-	  OC -> OCHIE:  Consent stored as QuestionnaireResponse
-	  OCHIE -> OCHIE: Consent QuestionnaireResponse extracted and \nCreate Consent resource with codes\n#CONSENT-KSA and #CONSENT-MYS
-	  OCHIE -> OCHIE: Add the consent FHIR resource to IPS
-    OC -> OCHIE : request verifiable HCERT SHL for  IPS\nSend Consent Questionniare
-	  OCHIE -> OCHIE : generate Verifiable Smart Health Link
-  end
-end
-
-HCEMR -> HCEMR: Upload pilgrims demographic information few weeks before Hajj
-P --> HW: travels to Host Country and seeks care,\nshares verifiable health document(IPS) from\nhealth wallet (IPS via SHL)
-HW --> HCEMR: identifies pilgrim with demographics and registers patient with pilgrimage number
-HW --> Scanner: uses scanner to scan QR code
-
-
-
-HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via SHL)
+activate OC
+HCEMR -> OC: scans QR code from\npilgrim's health wallet\n(IPS via VHL)
+deactivate OC
 destroy OC
-HCEMR -> HCEMR: verifies QR code signature\n using cached keys
-HCEMR  -> OCHIE : retrieves health document (IPS)\n(document might be pregenerated\n or generated on request)
+
+activate OCHIE
+HCEMR  -> OCHIE : retrieves health document (IPS)
+deactivate OCHIE
 destroy OCHIE
-
-
-HCEMR-> HCEMR: verifies health document (IPS) signature\n using cached keys
-HCEMR -> HCEMR: saves local copy of health document (IPS)
-HCEMR -> HW: display contents of health document
  
 HW --> P: provides appropriate care
-HW -> HCEMR: updates local record of care
+deactivate HW
+deactivate P
 
 @enduml

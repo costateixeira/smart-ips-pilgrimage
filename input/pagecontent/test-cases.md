@@ -28,18 +28,18 @@ AND sends a failure response as indicated by http response code
 
 ```
 
-##### Issue Verifiable SHL
+##### Issue VHL
 
 ```
-Feature: Issue Verifiable SHL
+Feature: Issue VHL
 
-Scenario: QR Code with HCERT containing SHL is generated
+Scenario: QR Code with HCERT containing VHL is generated
 GIVEN an IPS is generated
 AND consent is provided
 AND a Passcode and time limit is set
-WHEN the Origin Country Digital Health Wallet sends a issue-verifiable-shl-request to Origin Country HIE
-THEN the Origin Country HIE constructs a SHL payload
-AND embeds the SHL in HCERT
+WHEN the Origin Country Digital Health Wallet sends a issue-vhl-request to Origin Country HIE
+THEN the Origin Country HIE constructs a VHL payload
+AND embeds the VHL in HCERT
 AND constructs COSE payload
 AND signs the payload with Kid
 AND builds CWT structure
@@ -75,29 +75,29 @@ AND Error message is sent
 
 ```
 
-##### Retrieve SHL Manifest
+##### Retrieve VHL Manifest
 
 ```
 
-Feature: Retrieve SHL Manifest
+Feature: Retrieve VHL Manifest
 
-Scenario: SHL Manifest Request is valid
+Scenario: VHL Manifest Request is valid
 GIVEN a HCERT containing a SMART Health Link is obtained
-WHEN the Host Country EMR decodes the SHL Payload and issues a SHL Manifest Request
+WHEN the Host Country EMR decodes the VHL Payload and issues a VHL Manifest Request
 AND a correct passcode is provided
-AND the SHL has not expired
-THEN the server returns the SHL Manifest as a JSON object
+AND the VHL has not expired
+THEN the server returns the VHL Manifest as a JSON object
 
-Scenario: SHL Manifest Request made with invalid passcode
+Scenario: VHL Manifest Request made with invalid passcode
 GIVEN a HCERT containing a SMART Health Link is obtained
-WHEN the Host Country EMR decodes the SHL Payload and issues a SHL Manifest Request
+WHEN the Host Country EMR decodes the VHL Payload and issues a VHL Manifest Request
 AND incorrect passcode is provided
 THEN the server returns an error response using 401 HTTP status code and the response body is sent as a JSON payload with
 remainingAttempts
 
-Scenario: SHL Manifest Request but the SHL has expired
+Scenario: VHL Manifest Request but the VHL has expired
 GIVEN a HCERT containing a SMART Health Link is obtained
-WHEN the Host Country EMR decodes the SHL Payload and issues a SHL Manifest Request
+WHEN the Host Country EMR decodes the VHL Payload and issues a VHL Manifest Request
 AND the SMART Health Link has expired
 THEN the server returns an error response using 404 HTTP status code
 
@@ -110,12 +110,12 @@ THEN the server returns an error response using 404 HTTP status code
 Feature: Retrieve IPS JSON
 
 Scenario: Retrieve IPS JSON request is sent
-GIVEN SHL Manifest is obtained
+GIVEN VHL Manifest is obtained
 WHEN the Host Country EMR sends a GET request for the IPS JSON
 THEN the server responds with the IPS as a JSON
 
 Scenario: Retrieve IPS PDF request is sent
-GIVEN SHL Manifest is obtained
+GIVEN VHL Manifest is obtained
 WHEN the Host Country EMR sends a GET request for the IPS PDF
 THEN the server responds with the IPS as a PDF
 

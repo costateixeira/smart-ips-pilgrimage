@@ -1,4 +1,4 @@
-The issue verifiable SHL Request Event transaction is initiated by a Origin Country Health Wallet against the Origin Country HIE.
+The issue VHL Request Event transaction is initiated by a Origin Country Health Wallet against the Origin Country HIE.
 
 
 <figure>
