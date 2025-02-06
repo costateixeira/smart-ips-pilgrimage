@@ -119,8 +119,11 @@ hapi:
 
     implementationguides:
       ips:
-        packageUrl: https://hl7.org/fhir/uv/ips/2024Sep/package.tgz
-        name: hl7.fhir.uv.ips
-        version: 2.0.0-ballot
+        packageUrl: https://costateixeira.github.io/smart-ips-pilgrimage/package.tgz
+        name: smart.who.int.ips-pilgrimage
+        version: 2.0.2
         reloadExisting: true
         installMode: STORE_AND_INSTALL
+
+
+
