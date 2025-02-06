@@ -1,4 +1,8 @@
-// Instance: VHLDocumentResponderCapStatement
+// 
+
+
+
+//Instance: VHLDocumentResponderCapStatement
 // InstanceOf: CapabilityStatement
 // Usage: #definition
 

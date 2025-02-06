@@ -1,3 +1,7 @@
+
+
+
+
 Instance:   PilgrimFolder
 InstanceOf: IHE.MHD.Minimal.Folder
 Title: "My Hajj Pilgrimage Minimal Folder"
@@ -38,6 +42,8 @@ Usage: #example
 * content.format.system = "urn:ietf:rfc:3986"
 * content.attachment.contentType = #text/plain
 * content.attachment.url = "https://worldhealthorganization.github.io/smart-ips-pilgrimage/branches/2.0.0/Bundle-MyIPS.json"
+
+
 
 Instance:   IPSPDFDocumentReference
 InstanceOf: IHE.MHD.Minimal.DocumentReference

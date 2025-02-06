@@ -18,6 +18,8 @@ Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unk
 Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $consent = http://smart.who.int/ips-pilgrimage/CodeSystem/IPS.HAJJ.CONSENT
 
+
+
 Instance: MyIPS
 InstanceOf: HajjIPS
 Title: "My IPS"
@@ -135,34 +137,36 @@ Usage: #inline
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Consent MYS for pilgrimage</div>"
 * section[=].entry = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7)
-Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e8
-InstanceOf: Patient
-Description: "Example Patient"
-Usage: #inline
-* identifier.system = "urn:oid:2.16.840.1.113883.2.4.6.3"
-* identifier.value = "574687583"
-* active = true
-* name.family = "DeLarosa"
-* name.given = "Martha"
-* telecom.system = #phone
-* telecom.value = "+31788700800"
-* telecom.use = #home
-* gender = #female
-* birthDate = "1972-05-01"
-* address.line = "Laan Van Europa 1600"
-* address.city = "Dordrecht"
-* address.postalCode = "3317 DB"
-* address.country = "NL"
-* contact.relationship = $v3-RoleCode#MTH
-* contact.name.family = "Mum"
-* contact.name.given = "Martha"
-* contact.telecom.system = #phone
-* contact.telecom.value = "+33-555-20036"
-* contact.telecom.use = #home
-* contact.address.line = "Promenade des Anglais 111"
-* contact.address.city = "Lyon"
-* contact.address.postalCode = "69001"
-* contact.address.country = "FR"
+
+
+// Instance: 2b90dd2b-2dab-4c75-9bb9-a355e07401e8
+// InstanceOf: Patient
+// Description: "Example Patient"
+// Usage: #inline
+// * identifier.system = "urn:oid:2.16.840.1.113883.2.4.6.3"
+// * identifier.value = "574687583"
+// * active = true
+// * name.family = "DeLarosa"
+// * name.given = "Martha"
+// * telecom.system = #phone
+// * telecom.value = "+31788700800"
+// * telecom.use = #home
+// * gender = #female
+// * birthDate = "1972-05-01"
+// * address.line = "Laan Van Europa 1600"
+// * address.city = "Dordrecht"
+// * address.postalCode = "3317 DB"
+// * address.country = "NL"
+// * contact.relationship = $v3-RoleCode#MTH
+// * contact.name.family = "Mum"
+// * contact.name.given = "Martha"
+// * contact.telecom.system = #phone
+// * contact.telecom.value = "+33-555-20036"
+// * contact.telecom.use = #home
+// * contact.address.line = "Promenade des Anglais 111"
+// * contact.address.city = "Lyon"
+// * contact.address.postalCode = "69001"
+// * contact.address.country = "FR"
 
 
 Instance: 1c616b24-3895-48c4-9a02-9a64110351ef
@@ -435,6 +439,8 @@ Usage: #inline
 * category.coding.code = #acd
 * performer.display = "Org1"
 * sourceReference = Reference(DocumentReference/ex-documentreference)
+
+
 
 Instance: ex-documentreference
 InstanceOf: DocumentReference

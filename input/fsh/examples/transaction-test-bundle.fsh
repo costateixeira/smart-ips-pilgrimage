@@ -2,6 +2,8 @@ Alias: $loinc = http://loinc.org
 
 // this is a Bundle to post to a test server
 
+
+
 Instance: bundle-transaction
 InstanceOf: Bundle
 Usage: #example
@@ -75,8 +77,6 @@ Usage: #example
 
 
 
-
-
 Instance: DocRef1
 InstanceOf: DocumentReference
 Title:      "DocumentReference for Comprehensive fully filled metadata for a document in a Binary"
@@ -111,7 +111,11 @@ Usage: #inline
 
 
 
-// Instance: DocRef3
+// 
+
+
+
+//Instance: DocRef3
 // InstanceOf: DocumentReference
 // Title: "Dummy Binary document that says: Hello World"
 // Description: """
