@@ -150,7 +150,7 @@ Usage: #example
 * code.coding[=].display.extension.extension[=].valueString = "opvliegers"
 * code.coding[=].display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * code.coding[+] = $icd-10#N95.1 "Menopausal and female climacteric states"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * onsetDateTime = "2015"
 * recordedDate = "2016-10"
 
@@ -164,7 +164,7 @@ Usage: #example
 * identifier.value = "b75f92cb-61d4-469a-9387-df5ef70d25f0"
 * status = #active
 * medicationReference = Reference(urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc)
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectivePeriod.start = "2015-03"
 * dosage.timing.repeat.count = 1
 * dosage.timing.repeat.periodUnit = #d
@@ -181,7 +181,7 @@ Usage: #example
 * identifier.value = "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
 * status = #active
 * medicationReference = Reference(urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626)
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectivePeriod.start = "2016-01"
 * dosage.route = $standardterms#20053000 "Oral use"
 
@@ -222,7 +222,7 @@ Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement"
 * extension.valueDateTime = "2010"
 * code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"
-* patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* patient = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * onsetDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * onsetDateTime.extension.valueCode = #unknown
 //* onsetDateTime = "2010"
@@ -245,7 +245,7 @@ Usage: #example
 * code.coding[=].display.extension.extension[=].valueString = "Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"
 * code.coding[=].display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * code.coding[+] = $icd-o-3#8500/3 "Infiltrating duct carcinoma, NOS"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * onsetDateTime = "2015-01"
 * abatementDateTime = "2015-03"
 
@@ -266,7 +266,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory
 * code = $loinc#882-1 "ABO and Rh group [Type] in Blood"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:15:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#278149003 "Blood group A Rh(D) positive"
@@ -279,7 +279,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory
 * code = $loinc#945-6 "C Ab [Presence] in Serum or Plasma"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
@@ -292,7 +292,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory
 * code = $loinc#1018-1 "E Ab [Presence] in Serum or Plasma"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#10828004 "Positive"
@@ -305,7 +305,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory
 * code = $loinc#1156-9 "little c Ab [Presence] in Serum or Plasma"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10T09:35:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#260385009 "Negative"
@@ -318,7 +318,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory
 * code.text = "Blood typing"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2015-10-10"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * hasMember[0] = Reference(urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741)
@@ -334,7 +334,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory
 * code = $loinc#17856-6 "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2017-11-10T08:20:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueQuantity = 7.5 '%' "%"
@@ -348,7 +348,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory
 * code = $loinc#42803-7 "Bacteria identified in Isolate"
-* subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectiveDateTime = "2017-12-10T08:20:00+01:00"
 * performer = Reference(urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)
 * valueCodeableConcept = $sct#115329001 "Methicillin resistant Staphylococcus aureus"
