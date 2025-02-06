@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "3f69e0a5-2177-4540-baab-7a5d0877428f"
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
-* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e7)
+* subject = Reference(2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * date = "2017-12-11T14:30:00+01:00"
 * author = Reference(1c616b24-3895-48c4-9a02-9a64110351ee)
 * title = "Patient Summary as of December 11, 2017 14:30"
@@ -67,7 +67,7 @@ Instance: Martha
 InstanceOf: Patient
 Description: "Example Patient"
 Usage: #example
-* id = "2b90dd2b-2dab-4c75-9bb9-a355e07401e7"
+* id = "2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
 * identifier.system = "urn:oid:2.16.840.1.113883.2.4.6.3"
 * identifier.value = "574687583"
 * active = true

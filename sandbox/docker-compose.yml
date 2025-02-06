@@ -13,14 +13,23 @@ services:
       - ./apps:/apps
       - ./conf:/data/hapi      
 
+    environment:
+      SPRING_CONFIG_LOCATION: 'file:///data/hapi/application.yml'
+
+    # # Add health check to verify FHIR server is running
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:8080/fhir/metadata"]
+    #   interval: 20s
+    #   timeout: 5s
+    #   retries: 5
+    #   start_period: 200s
+
   ember-gh:
     image: jkiddo/ember:latest
     environment:
       - location=https://costateixeira.github.io/smart-ips-pilgrimage/package.tgz
       - serverBase=http://fhir-server:${server_port:-8080}/fhir      
 
-##### For big configurations, just put the file in the conf folder and uncomment the following lines
-    #   - ./conf:/data/hapi
-    environment:
-      SPRING_CONFIG_LOCATION: 'file:///data/hapi/application.yml'
-
+    # depends_on:
+    #   fhir-server:
+    #     condition: service_healthy
