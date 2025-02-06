@@ -13,6 +13,12 @@ services:
       - ./apps:/apps
       - ./conf:/data/hapi      
 
+  ember-gh:
+    image: jkiddo/ember:latest
+    environment:
+      - location=https://costateixeira.github.io/smart-ips-pilgrimage/package.tgz
+      - serverBase=http://fhir-server:${server_port:-8080}/fhir      
+
 ##### For big configurations, just put the file in the conf folder and uncomment the following lines
     #   - ./conf:/data/hapi
     environment:
