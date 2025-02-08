@@ -1,0 +1,8 @@
+
+
+POST http://localhost:8080/fhir HTTP/1.1
+Accept: application/fhir+json
+Content-Type: application/fhir+json
+
+< .\extracted_package\fhir_transaction_bundle.json
+

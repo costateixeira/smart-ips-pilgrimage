@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  fhir-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.fhir-server
+      args:
+        PACKAGE_URL: ${PACKAGE_URL}  # Pass package URL at build time
+    container_name: fhir-server
+    restart: unless-stopped
+    ports:
+      - "${FHIR_SERVER_PORT}:8080"
+
+  fhir-extractor:
+    image: ghcr.io/costateixeira/packinstall:latest
+    depends_on:
+      - fhir-server
+    environment:
+      - FHIR_PACKAGE_URL=${PACKAGE_URL}
+      - MODE=EXAMPLE
+      - FHIR_SERVER_URL=http://fhir-server:${FHIR_SERVER_PORT}/fhir
+      - TIMEOUT=120
+    entrypoint: ["/app/entrypoint.sh"]

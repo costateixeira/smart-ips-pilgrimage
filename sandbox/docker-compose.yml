@@ -1,35 +1,15 @@
+version: '3.8'
+
 services:
   fhir-server:
-    image: hapiproject/hapi:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PACKAGE_URL: "${PACKAGE_URL}"  # Ensure correct formatting
+    container_name: fhir-server
     restart: unless-stopped
-    container_name: ${server_name}
     ports:
-      - ${server_port:-8080}:8080
-    env_file:
-      - .env
-
-    volumes:
-      - ./web:/custom
-      - ./apps:/apps
-      - ./conf:/data/hapi      
-
+      - "${FHIR_SERVER_PORT}:8080"
     environment:
-      SPRING_CONFIG_LOCATION: 'file:///data/hapi/application.yml'
-
-    # # Add health check to verify FHIR server is running
-    # healthcheck:
-    #   test: ["CMD", "curl", "-f", "http://localhost:8080/fhir/metadata"]
-    #   interval: 20s
-    #   timeout: 5s
-    #   retries: 5
-    #   start_period: 200s
-
-  ember-gh:
-    image: jkiddo/ember:latest
-    environment:
-      - location=https://costateixeira.github.io/smart-ips-pilgrimage/package.tgz
-      - serverBase=http://fhir-server:${server_port:-8080}/fhir      
-
-    # depends_on:
-    #   fhir-server:
-    #     condition: service_healthy
+      - PACKAGE_URL=${PACKAGE_URL}  # Ensure it's available at runtime

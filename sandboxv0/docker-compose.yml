@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  fhir-server:
+    image: hapiproject/hapi:latest
+    restart: unless-stopped
+    container_name: ${server_name}
+    ports:
+      - ${server_port:-8080}:8080
+    env_file:
+      - .env
+    volumes:
+      - ./web:/custom
+      - ./apps:/apps
+      - ./conf:/data/hapi      
+    environment:
+      SPRING_CONFIG_LOCATION: 'file:///data/hapi/application.yml'
+
+  fhir-extractor:
+    image: ghcr.io/costateixeira/packinstall:latest
+    depends_on:
+      - fhir-server
+    environment:
+      - FHIR_PACKAGE_URL=https://costateixeira.github.io/smart-ips-pilgrimage/package.tgz
+      - MODE=EXAMPLE
+      - FHIR_SERVER_URL=http://fhir-server:${server_port:-8080}/fhir
+      - TIMEOUT=120
+    entrypoint: ["/app/entrypoint.sh"]
