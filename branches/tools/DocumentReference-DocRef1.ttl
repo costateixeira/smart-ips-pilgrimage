@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/DocumentReference/DocRef1> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DocRef1"] ; # 
+  fhir:meta [
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocRef1</b></p><a name=\"DocRef1\"> </a><a name=\"hcDocRef1\"> </a><a name=\"DocRef1-en-US\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 11369-6}\">History of Immunization Narrative</span></p><p><b>date</b>: 2020-02-01 23:50:50-0500</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Size</b></td><td><b>Hash</b></td></tr><tr><td style=\"display: none\">*</td><td>text/plain</td><td>urn:uuid:cccccccc-2222-0000-0000-000000000002</td><td>11</td><td><code>MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA==</code></td></tr></table><p><b>format</b>: <a href=\"https://profiles.ihe.net/fhir/ihe.formatcode.fhir/1.2.0/CodeSystem-formatcode.html#formatcode-urn.58ihe.58iti.58xds-sd.58text.582008\">IHE Format Code set for use with Document Sharing urn:ihe:iti:xds-sd:text:2008</a>: ITI XDS-SD TEXT</p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:11369-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11369-6" ]
+     ] )
+  ] ) ; # 
+  fhir:date [ fhir:v "2020-02-01T23:50:50-05:00"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "text/plain" ] ;
+       fhir:url [ fhir:v "urn:uuid:cccccccc-2222-0000-0000-000000000002"^^xsd:anyURI ] ;
+       fhir:size [ fhir:v "11"^^xsd:nonNegativeInteger ] ;
+       fhir:hash [ fhir:v "MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA=="^^xsd:base64Binary ]
+     ] ;
+     fhir:format [
+       fhir:system [ fhir:v "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urn:ihe:iti:xds-sd:text:2008" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

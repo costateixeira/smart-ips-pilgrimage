@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/DocumentReference/DocRef2> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DocRef2"] ; # 
+  fhir:meta [
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocRef2</b></p><a name=\"DocRef2\"> </a><a name=\"hcDocRef2\"> </a><a name=\"DocRef2-en-US\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 11369-6}\">History of Immunization Narrative</span></p><p><b>date</b>: 2020-02-01 23:50:50-0500</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/json+fhir</td><td>/Bundle/myIPS</td></tr></table><p><b>format</b>: <a href=\"https://profiles.ihe.net/fhir/ihe.formatcode.fhir/1.2.0/CodeSystem-formatcode.html#formatcode-urn.58ihe.58pcc.58ips.582020\">IHE Format Code set for use with Document Sharing urn:ihe:pcc:ips:2020</a>: PCC IPS</p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:11369-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11369-6" ]
+     ] )
+  ] ) ; # 
+  fhir:date [ fhir:v "2020-02-01T23:50:50-05:00"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/json+fhir" ] ;
+       fhir:url [ fhir:v "/Bundle/myIPS"^^xsd:anyURI ]
+     ] ;
+     fhir:format [
+       fhir:system [ fhir:v "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urn:ihe:pcc:ips:2020" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

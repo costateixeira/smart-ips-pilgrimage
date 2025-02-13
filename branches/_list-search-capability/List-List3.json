@@ -1,0 +1,16 @@
+{
+  "resourceType" : "List",
+  "id" : "List3",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: List List3</b></p><a name=\"List3\"> </a><a name=\"hcList3\"> </a><a name=\"List3-en-US\"> </a><h2>This is another type of list</h2><table class=\"clstu\"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: some-other-list </td></tr><tr><td/></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr></table></div>"
+  },
+  "status" : "current",
+  "mode" : "working",
+  "title" : "This is another type of list",
+  "code" : {
+    "coding" : [{
+      "code" : "some-other-list"
+    }]
+  }
+}

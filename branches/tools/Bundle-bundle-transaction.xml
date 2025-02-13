@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-transaction"/>
+  <meta>
+    <lastUpdated value="2014-08-18T01:43:30Z"/>
+  </meta>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-100000000001"/>
+    <resource>
+      <List>
+        <id value="List1"/>
+        <meta>
+          <profile value="https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="List_List1"> </a><p class="res-header-id"><b>Generated Narrative: List List1</b></p><a name="List1"> </a><a name="hcList1"> </a><a name="List1-en-US"> </a><h2>This is the good folder</h2><table class="clstu"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: Folder as a FHIR List </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="DocumentReference-DocRef1.html">DocumentReference: status = current; type = Patient summary Document; category = History of Immunization Narrative; date = 2020-02-01 23:50:50-0500</a></td></tr></table></div>
+        </text>
+        <status value="current"/>
+        <mode value="working"/>
+        <title value="This is the good folder"/>
+        <code>
+          <coding>
+            <system value="https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"/>
+            <code value="folder"/>
+          </coding>
+        </code>
+        <entry>
+          <item>
+            <reference value="DocumentReference/DocRef1"/>
+          </item>
+        </entry>
+      </List>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="List/List1"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-100000000002"/>
+    <resource>
+      <List>
+        <id value="List2"/>
+        <meta>
+          <profile value="https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="List_List2"> </a><p class="res-header-id"><b>Generated Narrative: List List2</b></p><a name="List2"> </a><a name="hcList2"> </a><a name="List2-en-US"> </a><h2>This is an old folder</h2><table class="clstu"><tr><td>Mode: Working List </td><td>Status: Retired </td><td>Code: Folder as a FHIR List </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr></table></div>
+        </text>
+        <status value="retired"/>
+        <mode value="working"/>
+        <title value="This is an old folder"/>
+        <code>
+          <coding>
+            <system value="https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"/>
+            <code value="folder"/>
+          </coding>
+        </code>
+      </List>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="List/List2"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-100000000003"/>
+    <resource>
+      <List>
+        <id value="List3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="List_List3"> </a><p class="res-header-id"><b>Generated Narrative: List List3</b></p><a name="List3"> </a><a name="hcList3"> </a><a name="List3-en-US"> </a><h2>This is another type of list</h2><table class="clstu"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: some-other-list </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr></table></div>
+        </text>
+        <status value="current"/>
+        <mode value="working"/>
+        <title value="This is another type of list"/>
+        <code>
+          <coding>
+            <code value="some-other-list"/>
+          </coding>
+        </code>
+      </List>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="List/List3"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-200000000001"/>
+    <resource>
+      <DocumentReference>
+        <id value="DocRef1"/>
+        <meta>
+          <security>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HTEST"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DocumentReference_DocRef1"> </a><p class="res-header-id"><b>Generated Narrative: DocumentReference DocRef1</b></p><a name="DocRef1"> </a><a name="hcDocRef1"> </a><a name="DocRef1-en-US"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 60591-5}">Patient summary Document</span></p><p><b>category</b>: <span title="Codes:{http://loinc.org 11369-6}">History of Immunization Narrative</span></p><p><b>date</b>: 2020-02-01 23:50:50-0500</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Size</b></td><td><b>Hash</b></td></tr><tr><td style="display: none">*</td><td>text/plain</td><td>urn:uuid:cccccccc-2222-0000-0000-000000000002</td><td>11</td><td><code>MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA==</code></td></tr></table><p><b>format</b>: <a href="https://profiles.ihe.net/fhir/ihe.formatcode.fhir/1.2.0/CodeSystem-formatcode.html#formatcode-urn.58ihe.58iti.58xds-sd.58text.582008">IHE Format Code set for use with Document Sharing urn:ihe:iti:xds-sd:text:2008</a>: ITI XDS-SD TEXT</p></blockquote></div>
+        </text>
+        <status value="current"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+          </coding>
+        </type>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11369-6"/>
+          </coding>
+        </category>
+        <date value="2020-02-01T23:50:50-05:00"/>
+        <content>
+          <attachment>
+            <contentType value="text/plain"/>
+            <url value="urn:uuid:cccccccc-2222-0000-0000-000000000002"/>
+            <size value="11"/>
+            <hash value="MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA=="/>
+          </attachment>
+          <format>
+            <system value="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"/>
+            <code value="urn:ihe:iti:xds-sd:text:2008"/>
+          </format>
+        </content>
+      </DocumentReference>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="DocRef1"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-200000000002"/>
+    <resource>
+      <DocumentReference>
+        <id value="DocRef2"/>
+        <meta>
+          <security>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HTEST"/>
+          </security>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DocumentReference_DocRef2"> </a><p class="res-header-id"><b>Generated Narrative: DocumentReference DocRef2</b></p><a name="DocRef2"> </a><a name="hcDocRef2"> </a><a name="DocRef2-en-US"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 60591-5}">Patient summary Document</span></p><p><b>category</b>: <span title="Codes:{http://loinc.org 11369-6}">History of Immunization Narrative</span></p><p><b>date</b>: 2020-02-01 23:50:50-0500</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>application/json+fhir</td><td>/Bundle/myIPS</td></tr></table><p><b>format</b>: <a href="https://profiles.ihe.net/fhir/ihe.formatcode.fhir/1.2.0/CodeSystem-formatcode.html#formatcode-urn.58ihe.58pcc.58ips.582020">IHE Format Code set for use with Document Sharing urn:ihe:pcc:ips:2020</a>: PCC IPS</p></blockquote></div>
+        </text>
+        <status value="current"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+          </coding>
+        </type>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11369-6"/>
+          </coding>
+        </category>
+        <date value="2020-02-01T23:50:50-05:00"/>
+        <content>
+          <attachment>
+            <contentType value="application/json+fhir"/>
+            <url value="/Bundle/myIPS"/>
+          </attachment>
+          <format>
+            <system value="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"/>
+            <code value="urn:ihe:pcc:ips:2020"/>
+          </format>
+        </content>
+      </DocumentReference>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="DocumentReference/DocRef2"/>
+    </request>
+  </entry>
+</Bundle>

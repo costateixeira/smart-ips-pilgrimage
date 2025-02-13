@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/ips-pilgrimage/List/List1> a fhir:List ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "List1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: List List1</b></p><a name=\"List1\"> </a><a name=\"hcList1\"> </a><a name=\"List1-en-US\"> </a><h2>This is the good folder</h2><table class=\"clstu\"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: Folder as a FHIR List </td></tr><tr><td/></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"DocumentReference-DocRef1.html\">DocumentReference: status = current; type = Patient summary Document; category = History of Immunization Narrative; date = 2020-02-01 23:50:50-0500</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:mode [ fhir:v "working"] ; # 
+  fhir:title [ fhir:v "This is the good folder"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "folder" ]
+     ] )
+  ] ; # 
+  fhir:entry ( [
+     fhir:item [
+       fhir:link <http://smart.who.int/ips-pilgrimage/DocumentReference/DocRef1> ;
+       fhir:reference [ fhir:v "DocumentReference/DocRef1" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

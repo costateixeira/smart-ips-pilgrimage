@@ -1,0 +1,343 @@
+SMART_WHO_INT_IPS_Pilgrimage : Validation Results
+=========================================
+
+err = 58, warn = 26, info = 93
+IG Publisher Version: 1.8.10
+Generated Sat Feb 08 18:35:29 UTC 2025. FHIR version 4.0.1 for smart.who.int.ips-pilgrimage#2.0.2 (canonical = http://smart.who.int/ips-pilgrimage)
+ Build Errors : 1 / 6 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f131 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f132 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Bundle-MyIPS : 58 / 2 / 48
+ /github/workspace/fsh-generated/resources/Bundle-bundle-transaction : 0 / 2 / 10
+ /github/workspace/fsh-generated/resources/CodeSystem-BrowserCs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-DistributionModelCs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-LanguageCs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-LicensingModelCs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-OperatingSystemCs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-30551ce1-5a28-4356-b684-1e639094ad4d : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-ExampleComposition : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c5 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c6 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc80 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc89 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c7 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/DocumentReference-DocRef1 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-DocRef2 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-FHIRIPSDocumentReference : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-FHIRIPSSignedDocumentReference : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-IPSPDFDocumentReference : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-IPSSignedPDFDocumentReference : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/DocumentReference-ex-documentreference : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DocumentReference-ex-documentreference1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage : 0 / 0 / 67
+ /github/workspace/fsh-generated/resources/List-List1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/List-List2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/List-List3 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/List-PilgrimFolder : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-8adc0999-9468-4ac9-9557-680fa133d625 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-8adc0999-9468-4ac9-9557-680fa133d626 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bb : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bc : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02e : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec5 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec6 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-2639657a-c19a-48e2-82cc-471e13b8ad93 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-2639657a-c19a-48e2-82cc-471e13b8ad94 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-26bee0a9-5997-4557-ab9d-c6adbb05b571 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-26bee0a9-5997-4557-ab9d-c6adbb05b572 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c70 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c79 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2740 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2741 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-b4916505-a06b-460c-9be8-011609282456 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-b4916505-a06b-460c-9be8-011609282457 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-cc354e00-a419-47ea-8b6c-1768b2a01645 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-cc354e00-a419-47ea-8b6c-1768b2a01646 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-890751f4-2924-4636-bab7-efffc7f3cf14 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-890751f4-2924-4636-bab7-efffc7f3cf15 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e8 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-1c616b24-3895-48c4-9a02-9a64110351ee : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-1c616b24-3895-48c4-9a02-9a64110351ef : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-Questionnaire-ConnectathonSubmission : 0 / 1 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentPeriod : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConsentVerifiedBy : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjConsent : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjIPS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjIPSComposition : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/StructureDefinition-HajjOrganization : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-Browser : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DistributionModel : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.SYSTEM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-Language : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-LicensingModel : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OperatingSystem : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource List/List2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource List/List3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource List/List1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/bundle-transaction.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/ul/li/a at Line 414, column 112: The link 'CapabilityStatement-VHLDocumentResponder.html' for "VHL Document Responder" cannot be resolved
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f131.json ==
+INFORMATION: AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f131: AllergyIntolerance.code.coding[0].code: The code '373270004' is valid but is not active
+== fsh-generated/resources/AllergyIntolerance-72884cad-ebe6-4f43-a51a-2f978275f132.json ==
+INFORMATION: AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132: AllergyIntolerance.code.coding[0].code: The code '373270004' is valid but is not active
+== fsh-generated/resources/Bundle-MyIPS.json ==
+INFORMATION: Bundle/MyIPS: Bundle.entry[5].resource.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+INFORMATION: Bundle/MyIPS: Bundle.entry[5].resource/*MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6*/.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+INFORMATION: Bundle/MyIPS: Bundle.entry[9].resource.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/MyIPS: Bundle.entry[9].resource/*AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132*/.code.coding[0].code: The code '373270004' is valid but is not active
+INFORMATION: Bundle/MyIPS: Bundle.entry[11].resource/*Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7*/.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/MyIPS: Bundle.entry[19].resource.provision.purpose[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.subject: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Composition.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.author[1]: Can't find 'Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef' in the bundle (Composition.author). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.custodian: Can't find 'Organization/890751f4-2924-4636-bab7-efffc7f3cf15' in the bundle (Composition.custodian). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.attester[1].party: Can't find 'Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef' in the bundle (Composition.attester.party). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.attester[2].party: Can't find 'Organization/890751f4-2924-4636-bab7-efffc7f3cf15' in the bundle (Composition.attester.party). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[1].entry[1]: Can't find 'Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[2].entry[1]: Can't find 'MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[2].entry[2]: Can't find 'MedicationStatement/47524493-846a-4a26-bae2-4ab03e60f02e' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[3].entry[1]: Can't find 'AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[4].entry[1]: Can't find 'Condition/c4597aa2-688a-401b-a658-70acc6de28c6' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[6].entry[1]: Can't find 'Observation/2639657a-c19a-48e2-82cc-471e13b8ad94' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[6].entry[2]: Can't find 'Observation/cc354e00-a419-47ea-8b6c-1768b2a01646' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[6].entry[3]: Can't find 'Observation/26bee0a9-5997-4557-ab9d-c6adbb05b572' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572``)
+ERROR: Bundle/MyIPS: Bundle.entry[1].resource.section[7].entry[1]: Can't find 'Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[4].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc' in the bundle (Bundle.entry[5].resource.medication[x]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[5].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Medication/8adc0999-9468-4ac9-9557-680fa133d626' in the bundle (Bundle.entry[6].resource.medication[x]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[6].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[9].resource.patient). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[10].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[12].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' in the bundle (Bundle.entry[12].resource.performer[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[13].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' in the bundle (Bundle.entry[13].resource.performer[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[14].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' in the bundle (Bundle.entry[14].resource.performer[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[15].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' in the bundle (Bundle.entry[15].resource.performer[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[16].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' in the bundle (Bundle.entry[16].resource.performer[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2741' in the bundle (Bundle.entry[16].resource.hasMember[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c70' in the bundle (Bundle.entry[16].resource.hasMember[1]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Observation/b4916505-a06b-460c-9be8-011609282457' in the bundle (Bundle.entry[16].resource.hasMember[2]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:b4916505-a06b-460c-9be8-011609282457``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4' in the bundle (Bundle.entry[16].resource.hasMember[3]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[17].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' in the bundle (Bundle.entry[17].resource.performer[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8' in the bundle (Bundle.entry[18].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8``)
+ERROR: Bundle/MyIPS: Bundle: Can't find 'Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' in the bundle (Bundle.entry[18].resource.performer[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be ``urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7``)
+INFORMATION: Bundle/MyIPS: Bundle: Can't find 'DocumentReference/ex-documentreference' in the bundle (Bundle.entry[19].resource.source[x])
+ERROR: Bundle/MyIPS: Bundle.entry[2]: Entry 'urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[3]: Entry 'urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[4]: Entry 'urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[5]: Entry 'urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[6]: Entry 'urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[7]: Entry 'urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[8]: Entry 'urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[9]: Entry 'urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[10]: Entry 'urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[11]: Entry 'urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[12]: Entry 'urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[13]: Entry 'urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[14]: Entry 'urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[15]: Entry 'urn:uuid:b4916505-a06b-460c-9be8-011609282457' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[16]: Entry 'urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[17]: Entry 'urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[18]: Entry 'urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[19]: Entry 'urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572' isn't reachable by traversing links (forward or backward) from the Composition
+ERROR: Bundle/MyIPS: Bundle.entry[20]: Entry 'urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c7' isn't reachable by traversing links (forward or backward) from the Composition
+== fsh-generated/resources/Bundle-bundle-transaction.json ==
+WARNING: Bundle/bundle-transaction: Bundle.entry[0].resource/*List/List1*/.entry[0].item: Entry 3 matches the reference DocumentReference/DocRef1 by type and id but it's fullUrl urn:uuid:61ebe359-bfdc-4613-8bf2-200000000001 does not match the full target URL urn:uuid:DocRef1 by Bundle resolution rules
+WARNING: Bundle/bundle-transaction: Bundle.entry[2].resource/*List/List3*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Bundle/bundle-transaction: Bundle.entry[3].resource/*DocumentReference/DocRef1*/.content[0].format: The Coding provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:iti:xds-sd:text:2008) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set.  (error message = The provided code 'http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:iti:xds-sd:text:2008' was not found in the value set 'http://hl7.org/fhir/ValueSet/formatcodes|4.0.1')
+INFORMATION: Bundle/bundle-transaction: Bundle.entry[4].resource/*DocumentReference/DocRef2*/.content[0].format: The Coding provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:pcc:ips:2020) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set.  (error message = The provided code 'http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:pcc:ips:2020' was not found in the value set 'http://hl7.org/fhir/ValueSet/formatcodes|4.0.1')
+== fsh-generated/resources/CodeSystem-BrowserCs.json ==
+== fsh-generated/resources/CodeSystem-DistributionModelCs.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.ACTOR.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/CodeSystem-IPS.HAJJ.TRANSACTION.json ==
+== fsh-generated/resources/CodeSystem-LanguageCs.json ==
+== fsh-generated/resources/CodeSystem-LicensingModelCs.json ==
+== fsh-generated/resources/CodeSystem-OperatingSystemCs.json ==
+== fsh-generated/resources/Composition-30551ce1-5a28-4356-b684-1e639094ad4d.json ==
+== fsh-generated/resources/Composition-ExampleComposition.json ==
+== fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c5.json ==
+INFORMATION: Condition/c4597aa2-688a-401b-a658-70acc6de28c5: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6750-9)
+== fsh-generated/resources/Condition-c4597aa2-688a-401b-a658-70acc6de28c6.json ==
+INFORMATION: Condition/c4597aa2-688a-401b-a658-70acc6de28c6: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6750-9)
+== fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc80.json ==
+INFORMATION: Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6751-7)
+== fsh-generated/resources/Condition-c64139e7-f02d-409c-bf34-75e8bf23bc89.json ==
+INFORMATION: Condition/c64139e7-f02d-409c-bf34-75e8bf23bc89: Condition.severity: None of the codings provided are in the value set 'Condition/Diagnosis Severity' (http://hl7.org/fhir/ValueSet/condition-severity|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#LA6751-7)
+== fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c6.json ==
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6: Consent.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c6: Consent.provision.purpose[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/Consent-c7781f44-6df8-4a8b-9e06-0b34263a47c7.json ==
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7: Consent.category[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Consent/c7781f44-6df8-4a8b-9e06-0b34263a47c7: Consent.provision.purpose[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/DocumentReference-DocRef1.json ==
+INFORMATION: DocumentReference/DocRef1: DocumentReference.content[0].format: The Coding provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:iti:xds-sd:text:2008) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set.  (error message = The provided code 'http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:iti:xds-sd:text:2008' was not found in the value set 'http://hl7.org/fhir/ValueSet/formatcodes|4.0.1')
+== fsh-generated/resources/DocumentReference-DocRef2.json ==
+INFORMATION: DocumentReference/DocRef2: DocumentReference.content[0].format: The Coding provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:pcc:ips:2020) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set.  (error message = The provided code 'http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:pcc:ips:2020' was not found in the value set 'http://hl7.org/fhir/ValueSet/formatcodes|4.0.1')
+== fsh-generated/resources/DocumentReference-FHIRIPSDocumentReference.json ==
+INFORMATION: DocumentReference/FHIRIPSDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-FHIRIPSSignedDocumentReference.json ==
+INFORMATION: DocumentReference/FHIRIPSSignedDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-IPSPDFDocumentReference.json ==
+INFORMATION: DocumentReference/IPSPDFDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-IPSSignedPDFDocumentReference.json ==
+INFORMATION: DocumentReference/IPSSignedPDFDocumentReference: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+== fsh-generated/resources/DocumentReference-ex-documentreference.json ==
+== fsh-generated/resources/DocumentReference-ex-documentreference1.json ==
+== fsh-generated/resources/ImplementationGuide-smart.who.int.ips-pilgrimage.json ==
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[0]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[1]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[2]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[3]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[4]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[5]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[6]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[7]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[8]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[9]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[10]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[11]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[12]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[13]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[14]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[15]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[16]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[17]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[18]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[19]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[20]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[21]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[22]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[23]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[24]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[25]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[26]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[27]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[29]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[30]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[31]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[32]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[33]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[34]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[35]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[36]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[37]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[38]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[39]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[40]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[41]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[42]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[43]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[44]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[45]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[47]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[48]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[49]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[50]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[51]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[52]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[53]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[54]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[55]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[56]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[57]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[58]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[66]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[68]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[70]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[71]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[72]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[74]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[75]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ImplementationGuide/smart.who.int.ips-pilgrimage: ImplementationGuide.definition.resource[76]: This element does not match any known slice defined in the profile http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/List-List1.json ==
+== fsh-generated/resources/List-List2.json ==
+== fsh-generated/resources/List-List3.json ==
+WARNING: List/List3: List.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/List-PilgrimFolder.json ==
+== fsh-generated/resources/Medication-8adc0999-9468-4ac9-9557-680fa133d625.json ==
+== fsh-generated/resources/Medication-8adc0999-9468-4ac9-9557-680fa133d626.json ==
+== fsh-generated/resources/Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bb.json ==
+== fsh-generated/resources/Medication-976d0804-cae0-45ae-afe3-a19f3ceba6bc.json ==
+== fsh-generated/resources/MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02d.json ==
+== fsh-generated/resources/MedicationStatement-47524493-846a-4a26-bae2-4ab03e60f02e.json ==
+== fsh-generated/resources/MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec5.json ==
+INFORMATION: MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec5: MedicationStatement.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+== fsh-generated/resources/MedicationStatement-c220e36c-eb67-4fc4-9ba1-2fabc52acec6.json ==
+INFORMATION: MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6: MedicationStatement.dosage[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
+== fsh-generated/resources/Observation-2639657a-c19a-48e2-82cc-471e13b8ad93.json ==
+== fsh-generated/resources/Observation-2639657a-c19a-48e2-82cc-471e13b8ad94.json ==
+== fsh-generated/resources/Observation-26bee0a9-5997-4557-ab9d-c6adbb05b571.json ==
+== fsh-generated/resources/Observation-26bee0a9-5997-4557-ab9d-c6adbb05b572.json ==
+== fsh-generated/resources/Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c70.json ==
+== fsh-generated/resources/Observation-6e39ccf3-f997-4a2b-8f28-b4b71c778c79.json ==
+== fsh-generated/resources/Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae3.json ==
+== fsh-generated/resources/Observation-a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4.json ==
+== fsh-generated/resources/Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2740.json ==
+== fsh-generated/resources/Observation-aa11a2be-3e36-4be7-b58a-6fc3dace2741.json ==
+== fsh-generated/resources/Observation-b4916505-a06b-460c-9be8-011609282456.json ==
+== fsh-generated/resources/Observation-b4916505-a06b-460c-9be8-011609282457.json ==
+== fsh-generated/resources/Observation-cc354e00-a419-47ea-8b6c-1768b2a01645.json ==
+== fsh-generated/resources/Observation-cc354e00-a419-47ea-8b6c-1768b2a01646.json ==
+== fsh-generated/resources/Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6.json ==
+INFORMATION: Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd6: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+== fsh-generated/resources/Organization-45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7.json ==
+INFORMATION: Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+== fsh-generated/resources/Organization-890751f4-2924-4636-bab7-efffc7f3cf14.json ==
+== fsh-generated/resources/Organization-890751f4-2924-4636-bab7-efffc7f3cf15.json ==
+== fsh-generated/resources/Patient-2b90dd2b-2dab-4c75-9bb9-a355e07401e8.json ==
+== fsh-generated/resources/Practitioner-1c616b24-3895-48c4-9a02-9a64110351ee.json ==
+== fsh-generated/resources/Practitioner-1c616b24-3895-48c4-9a02-9a64110351ef.json ==
+== fsh-generated/resources/Questionnaire-Questionnaire-ConnectathonSubmission.json ==
+WARNING: Questionnaire/Questionnaire-ConnectathonSubmission: Questionnaire: Constraint failed: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)
+== fsh-generated/resources/StructureDefinition-ConsentPeriod.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentPeriod'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ConsentVerifiedBy.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/ConsentVerifiedBy'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-HajjConsent.json ==
+INFORMATION: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.differential.element[3].binding: The definition for the element 'Consent.provision.purpose' binds to the value set 'http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/HajjConsent: StructureDefinition.snapshot.element[46].binding: The definition for the element 'Consent.provision.purpose' binds to the value set 'http://smart.who.int/ips-pilgrimage/ValueSet/IPS.HAJJ.CONSENT' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-HajjIPS.json ==
+== fsh-generated/resources/StructureDefinition-HajjIPSComposition.json ==
+INFORMATION: StructureDefinition/HajjIPSComposition: Composition.extension: The extension http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber|5.1.0 is deprecated
+INFORMATION: StructureDefinition/HajjIPSComposition: StructureDefinition.snapshot.element[40].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/HajjIPSComposition: StructureDefinition.snapshot.element[54].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-HajjOrganization.json ==
+WARNING: StructureDefinition.where(url = 'http://smart.who.int/ips-pilgrimage/StructureDefinition/HajjOrganization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-Browser.json ==
+WARNING: ValueSet/Browser: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-DistributionModel.json ==
+WARNING: ValueSet/DistributionModel: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.ACTOR.SYSTEM.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.CONSENT.json ==
+== fsh-generated/resources/ValueSet-IPS.HAJJ.TRANSACTION.json ==
+== fsh-generated/resources/ValueSet-Language.json ==
+WARNING: ValueSet/Language: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-LicensingModel.json ==
+WARNING: ValueSet/LicensingModel: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-OperatingSystem.json ==
+WARNING: ValueSet/OperatingSystem: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

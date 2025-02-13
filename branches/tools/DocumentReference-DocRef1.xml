@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="DocRef1"/>
+  <meta>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference DocRef1</b></p><a name="DocRef1"> </a><a name="hcDocRef1"> </a><a name="DocRef1-en-US"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 60591-5}">Patient summary Document</span></p><p><b>category</b>: <span title="Codes:{http://loinc.org 11369-6}">History of Immunization Narrative</span></p><p><b>date</b>: 2020-02-01 23:50:50-0500</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Size</b></td><td><b>Hash</b></td></tr><tr><td style="display: none">*</td><td>text/plain</td><td>urn:uuid:cccccccc-2222-0000-0000-000000000002</td><td>11</td><td><code>MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA==</code></td></tr></table><p><b>format</b>: <a href="https://profiles.ihe.net/fhir/ihe.formatcode.fhir/1.2.0/CodeSystem-formatcode.html#formatcode-urn.58ihe.58iti.58xds-sd.58text.582008">IHE Format Code set for use with Document Sharing urn:ihe:iti:xds-sd:text:2008</a>: ITI XDS-SD TEXT</p></blockquote></div>
+  </text>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="60591-5"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11369-6"/>
+    </coding>
+  </category>
+  <date value="2020-02-01T23:50:50-05:00"/>
+  <content>
+    <attachment>
+      <contentType value="text/plain"/>
+      <url value="urn:uuid:cccccccc-2222-0000-0000-000000000002"/>
+      <size value="11"/>
+      <hash value="MGE0ZDU1YThkNzc4ZTUwMjJmYWI3MDE5NzdjNWQ4NDBiYmM0ODZkMA=="/>
+    </attachment>
+    <format>
+      <system value="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"/>
+      <code value="urn:ihe:iti:xds-sd:text:2008"/>
+    </format>
+  </content>
+</DocumentReference>

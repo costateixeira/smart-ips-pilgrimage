@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="List1"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.Folder"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: List List1</b></p><a name="List1"> </a><a name="hcList1"> </a><a name="List1-en-US"> </a><h2>This is the good folder</h2><table class="clstu"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: Folder as a FHIR List </td></tr><tr><td/></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="DocumentReference-DocRef1.html">DocumentReference: status = current; type = Patient summary Document; category = History of Immunization Narrative; date = 2020-02-01 23:50:50-0500</a></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <mode value="working"/>
+  <title value="This is the good folder"/>
+  <code>
+    <coding>
+      <system value="https://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes"/>
+      <code value="folder"/>
+    </coding>
+  </code>
+  <entry>
+    <item>
+      <reference value="DocumentReference/DocRef1"/>
+    </item>
+  </entry>
+</List>
